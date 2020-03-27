@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey": "",
+    "frontEndHost": "http://localhost:5000/"
+}
