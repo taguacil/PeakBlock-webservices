@@ -19,9 +19,6 @@ passport.use(
                 if (!user) {
                     return done(null, false, { message: 'User not found' });
                 }
-                if (!user.email.isVerified || user.email.address !== token.user.email) {
-                    return done(null, false, { message: 'Verification Required' });
-                }
                 return done(null, token.user);
             } catch (err) {
                 return done(err);
@@ -54,9 +51,6 @@ module.exports = function authenticateUser(req, res, next) {
                 }
                 if (info.message === 'User not found') {
                     return res.status(401).send(info);
-                }
-                if (info.message === 'Verification Required') {
-                    return res.status(401).send({ message: 'Please Verify your email, then re-login' });
                 }
             }
             req.user = user;

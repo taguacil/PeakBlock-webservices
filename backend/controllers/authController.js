@@ -10,9 +10,8 @@ module.exports = async function authenticate(req, res, next) {
             if (error) return next(err);
             const body = {
                 id: user.id,
-                email: user.email.address,
-                name: user.name,
-                role: user.role,
+                email: user.email,
+                name: user.name
             };
             const token = jwt.sign({ user: body }, config.get('jwtPrivateKey'));
             return res.send({ id: user._id, token });
