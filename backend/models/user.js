@@ -23,23 +23,15 @@ const userSchema = new mongoose.Schema({
         required: true,
     },
     phone: {
-        code: {
-            type: String,
-            minlength: 2, // Egypt code is 20 with length 2
-            maxlength: 2,
-            required: true,
-        },
-        number: {
-            type: String,
-            unique: true,
-            validate: {
-                validator: function isPhoneNumberValid(v) {
-                    return /^01[0-2|5]{1}[0-9]{8}$/.test(v);
-                },
-                message: (props) => `${props.value} is not a valid phone number.`,
+        type: String,
+        unique: true,
+        validate: {
+            validator: function isPhoneNumberValid(v) {
+                return /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/.test(v);
             },
-            required: [true, 'phone number is required.'],
+            message: (props) => `${props.value} is not a valid phone number.`,
         },
+        required: [true, 'phone number is required.'],
     },
     gender: {
         type: String,
@@ -59,11 +51,9 @@ const userSchema = new mongoose.Schema({
         type: {
             type: String,
             enum: ['Point'], // 'location.type' must be 'Point'
-            required: true,
         },
         coordinates: {
             type: [Number], // X for lon, Y for lat
-            required: true,
         },
     },
 }, { timestamps: true });
@@ -106,23 +96,8 @@ const userSchemaAjv = {
             maxLength: 1024,
         },
         phone: {
-            type: 'object',
-            properties: {
-                code: {
-                    type: 'string',
-                    minLength: 2,
-                    maxLength: 2,
-                },
-                number: {
-                    type: 'string',
-                    pattern: '^01[0-2|5]{1}[0-9]{8}$',
-                },
-            },
-            required: [
-                'code',
-                'number',
-            ],
-            additionalProperties: false,
+            type: 'string',
+            pattern: '^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$',
         },
         gender: {
             type: 'string',
