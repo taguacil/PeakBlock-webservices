@@ -29,7 +29,7 @@ class MasterPredictor:
         pass
 
     @abstractmethod
-    def predict(self, features):
+    def predict(self, input):
         pass
 
     def train(self):

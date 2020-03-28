@@ -46,10 +46,11 @@ if __name__ == '__main__':
         'model_type': 'naive_bayes',
         'model_hyperparams': {},
     }
-    features = pd.Series({
-        'dry_cough': 1,
-        'fever': 0,
-        'difficulty_breathing': 0
+    features = pd.DataFrame({
+        'prior': {'Taimir': 0.003, 'Ramy':0.005},
+        'dry_cough': {'Taimir':0, 'Ramy':1},
+        'fever': {'Taimir':1, 'Ramy':0},
+        'difficulty_breathing': {'Taimir':1, 'Ramy':1}
     })
     predictorObj = DiagnosisPredictor(config)
     print(predictorObj.run_inference(features))
