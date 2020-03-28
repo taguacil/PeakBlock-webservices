@@ -20,9 +20,9 @@ from typing import Union
 from sanic import Sanic
 
 # User-defined library import
-webapp_settings
-app.app_core import app_endpoints
-Utilities.logger import create_logger
+import webapp_settings
+from app.app_core import app_endpoints
+from Utilities.logger import create_logger
 
 logger = create_logger(__name__)
 
