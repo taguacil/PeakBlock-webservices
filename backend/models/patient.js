@@ -56,13 +56,17 @@ const patientSchema = new mongoose.Schema({
             type: Boolean,
         },
     }],
-    generalPractioner: {
-        // TODO: [{ Reference(Organization|Practitioner|PractitionerRole) }], // Patient's nominated primary care provider
-    },
+    generalPractioner: [{
+        organization: { type: mongoose.Schema.Types.ObjectId, ref: 'Organization' },
+        practitioner: { type: mongoose.Schema.Types.ObjectId, ref: 'Practitioner' },
+        practitionerRole: { type: mongoose.Schema.Types.ObjectId, ref: 'PractitionerRole' },
+        // [{ Reference(Organization|Practitioner|PractitionerRole) }], // Patient's nominated primary care provider
+    }],
     managingOrganization: { type: mongoose.Schema.Types.ObjectId, ref: 'Organization' },
-    link: [{ // // Link to another patient resource that concerns the same actual person
+    link: [{ // Link to another patient resource that concerns the same actual person
         other: { // TODO: { Reference(Patient|RelatedPerson) }, // R!  The other patient or related person resource that the link refers to
-
+            patient: { type: mongoose.Schema.Types.ObjectId, ref: 'Patient' },
+            // TODO: relatedPerson: { type: mongoose.Schema.Types.ObjectId, ref: 'RelatedPerson' },
         },
         type: {
             type: String,
@@ -98,6 +102,9 @@ const patientSchema = new mongoose.Schema({
             type: Boolean,
         },
     },
+    medical_conditions: [{ // diabetes, heart disease, allergies,..
+        type: String,
+    }],
 }, { timestamps: true });
 
 const Patient = mongoose.model('Patient', patientSchema);
