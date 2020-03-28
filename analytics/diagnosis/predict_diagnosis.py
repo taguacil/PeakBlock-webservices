@@ -28,7 +28,7 @@ class DiagnosisPredictor:
         self.model_type = config['model_type']
         self.model_hyperparams = config['model_hyperparams']
         self.model_module = importlib.import_module('.'+self.model_type, package='diagnosis_algorithms')
-        self.model = self.model_module.PredictorClass(self.model_params)
+        self.model = self.model_module.PredictorClass(self.model_hyperparams)
 
     def run_inference(self, features):
         """
