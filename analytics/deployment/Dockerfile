@@ -53,7 +53,7 @@ ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 # max size of inline text will be 150000 characters:
 #ENV PEAKBLOCK_WEBSERVICE_MAX_SIZE_INLINE_TEXT 150000
 
-
-CMD ["bash" ,"-c", "python3 -m analytics.run $PORT" ]
+WORKDIR /mnt/analytics
+CMD ["bash" ,"-c", "python3 -m run " ]
 
 #docker stop my_service;docker rm my_service;docker build -t my_service_image -f deployment/Dockerfile . && docker run -ti --ulimit core=0:0 --user runner --rm -v $(pwd)/..:/mnt --name my_service my_service_image
