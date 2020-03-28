@@ -26,11 +26,16 @@ else:
     ident = "/"
 
 working_dir = os.getcwd()
-param_path = working_dir + ident + "Input_files"+ ident
+param_path = working_dir + ident + "Input_files" + ident
+
+
+# get log_config
+def get_log_config():
+    logdict = eval(open(param_path + "logging.config").read())
+    return logging.config.dictConfig(logdict)
 
 
 # Create logger
 def create_logger(name):
-    logdict = eval(open(param_path + "logging.config").read())
-    logging.config.dictConfig(logdict)
+    get_log_config()
     return logging.getLogger(name)

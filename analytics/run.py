@@ -2,7 +2,7 @@
 =============================================================================
 Title    : Main peakblock script
 Project  : PeakBlock
-File     : PeakBlock.py
+File     : run.py
 -----------------------------------------------------------------------------
 
     Description:
@@ -28,6 +28,7 @@ import importlib
 import traceback
 
 # User-defined library import
+import webapp_core
 
 # Logger
 from Utilities.logger import create_logger
@@ -49,10 +50,15 @@ class PeakBlock:
 
     # Constructor
     def __init__(self, input_file):
-        logger.debug("ToDo")
+        self.port = input_file['port']
 
     def run(self):
-        logger.debug("ToDo")
+        if self.port is not None and self.port <= 0:
+            logger.info("Pre-initialized and pre-compiled all dependencies")
+            sys.exit(0)
+
+        logger.debug(f"Initializing on port {self.port}")
+        webapp_core.run(port=self.port)
 
 
 def update(dictionary, updateDict):
@@ -100,6 +106,9 @@ def main():
         updated_config = json.load(open(param_path + ident + input_filename,
                                         'r'))  # loads a dictionary written in a JSON file as a python dictionary
         local_params = update(local_params, updated_config)
+
+    framework = PeakBlock(local_params)
+    framework.run()
 
 
 if __name__ == "__main__":
