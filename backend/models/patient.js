@@ -3,26 +3,40 @@ const { humanNameSchema } = require('./humanName');
 const { contactPointSchema } = require('./contactPoint');
 const { addressSchema } = require('./address');
 const { codeableConceptSchema } = require('./codeableConcept');
+const { validator } = require('../misc/reqDataValidator');
 
 const patientSchema = new mongoose.Schema({
+    email: {
+        type: String,
+        minlength: 5,
+        maxlength: 255,
+        unique: true,
+        required: true,
+    },
+    password: {
+        type: String,
+        minlength: 8,
+        maxlength: 1024,
+        required: true,
+    },
     active: { // Whether this patient record is in active use
         type: Boolean,
         required: true,
+        default: true,
     },
     name: humanNameSchema,
     telecom: [contactPointSchema],
     gender: {
         type: String,
         enum: ['male', 'female', 'other', 'unknown'],
+        required: true,
     },
     birthDate: {
         type: Date,
+        required: true,
     },
-    deceasedBoolean: {
-        type: Boolean,
-    },
-    deceasedDatetime: {
-        type: Date,
+    deceased: {
+        type: Date, // if undefined, then not dead yet
     },
     address: [addressSchema],
     maritalStatus: codeableConceptSchema,
@@ -50,7 +64,7 @@ const patientSchema = new mongoose.Schema({
             end: { type: Date },
         },
     }],
-    communcation: [{
+    communication: [{
         langauge: codeableConceptSchema,
         preferred: {
             type: Boolean,
@@ -105,10 +119,75 @@ const patientSchema = new mongoose.Schema({
     medical_conditions: [{ // diabetes, heart disease, allergies,..
         type: String,
     }],
+    covid_state: {
+        type: String,
+        enum: ['certain', 'probable', 'possible', 'certainly_not'],
+    },
+    excorona: {
+        type: Boolean,
+    },
 }, { timestamps: true });
 
 const Patient = mongoose.model('Patient', patientSchema);
 
+const patientSchemaAjv = {
+    $id: 'patientSchema',
+    title: 'Patient',
+    description: 'patient data',
+    type: 'object',
+    required: [
+        'name',
+        'email',
+        'password',
+        'birthDate',
+        'gender',
+    ],
+    properties: {
+        name: {
+            type: 'object',
+            properties: {
+                text: {
+                    type: 'string',
+                },
+            },
+            required: [
+                'text',
+            ],
+            additionalProperties: false,
+        },
+        email: {
+            type: 'string',
+            format: 'email',
+            minLength: 5,
+            maxLength: 255,
+        },
+        password: {
+            type: 'string',
+            minLength: 8,
+            maxLength: 1024,
+        },
+        gender: {
+            type: 'string',
+            enum: [
+                'male',
+                'female',
+                'other',
+                'unknown'
+            ],
+        },
+        birthDate: {
+            type: 'string',
+            format: 'date',
+        },
+    },
+};
+
+function validatePatient(patient) {
+    return validator(patient, patientSchemaAjv, []);
+}
+
+
 module.exports = {
     Patient,
+    validate: validatePatient
 };

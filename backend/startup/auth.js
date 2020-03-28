@@ -1,6 +1,6 @@
 const LocalStrategy = require('passport-local').Strategy;
 const passport = require('passport');
-const { User } = require('../models/user');
+const { Patient } = require('../models/patient');
 
 passport.use(
     'login',
@@ -11,13 +11,13 @@ passport.use(
         },
         async (email, password, done) => {
             try {
-                const user = await User.findOne({ email });
-                if (!user || !(await user.validPassword(password))) {
+                const patient = await Patient.findOne({ email });
+                if (!patient || !(await patient.validPassword(password))) {
                     return done(null, false, {
                         message: 'Incorrect username or password',
                     });
                 }
-                return done(null, user, { message: 'Logged in Successfully' });
+                return done(null, patient, { message: 'Logged in Successfully' });
             } catch (err) {
                 return done(err);
             }

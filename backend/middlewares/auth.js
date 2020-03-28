@@ -2,7 +2,7 @@ const JWTStrategy = require('passport-jwt').Strategy;
 const ExtractJWT = require('passport-jwt').ExtractJwt;
 const config = require('config');
 const passport = require('passport');
-const { User } = require('../models/user');
+const { Patient } = require('../models/patient');
 
 const jwtPrivateKey = config.get('jwtPrivateKey');
 
@@ -15,11 +15,11 @@ passport.use(
         // eslint-disable-next-line consistent-return
         async (token, done) => {
             try {
-                const user = await User.findById(token.user.id);
-                if (!user) {
+                const patient = await Patient.findById(token.patient.id);
+                if (!patient) {
                     return done(null, false, { message: 'User not found' });
                 }
-                return done(null, token.user);
+                return done(null, token.patient);
             } catch (err) {
                 return done(err);
             }
@@ -27,13 +27,13 @@ passport.use(
     ),
 );
 
-module.exports = function authenticateUser(req, res, next) {
+module.exports = function authenticatePatient(req, res, next) {
     passport.authenticate(
         'jwt',
         {
             session: false,
         },
-        (err, user, info) => {
+        (err, patient, info) => {
             if (err) {
                 return next(err);
             }
@@ -49,7 +49,7 @@ module.exports = function authenticateUser(req, res, next) {
                         .status(401)
                         .send({ message: 'Token is invalid' });
                 }
-                if (info.message === 'User not found') {
+                if (info.message === 'Patient not found') {
                     return res.status(401).send(info);
                 }
             }
