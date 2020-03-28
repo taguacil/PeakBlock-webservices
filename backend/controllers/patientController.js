@@ -2,7 +2,7 @@ const crypto = require('crypto');
 const bcrypt = require('bcrypt');
 const _ = require('lodash');
 var emailvalidator = require('email-validator');
-const { Patient, validate, validateSymptoms } = require('../models/patient');
+const { Patient, validate, validateSymptoms, validateDetails } = require('../models/patient');
 
 // Patient Registration.
 exports.register = async (req, res) => {
@@ -45,11 +45,22 @@ exports.fillSymptoms = async (req, res) => {
     if (error) return res.status(400).send(error);
 
     const patient = await Patient.findByIdAndUpdate({ _id: req.user.id }, req.body);
-    console.log(patient);
     
     let probability = 'possible'; // TODO: CALL ML MODEL THAT RETURNS THE PROBABILITY THAT THIS USER IS A COVID 19 PATIENT
     patient.covid_state = probability;
     await patient.save();
+
+    res.send(patient);
+};
+
+exports.updateDetails = async (req, res) => {
+    if (!req.user) return res.status(403).send({ message: 'Please Login!' });
+
+    const error = validateDetails(req.body);
+    if (error) return res.status(400).send(error);
+
+    const patient = await Patient.findByIdAndUpdate({ _id: req.user.id }, req.body, { new: true });
+    console.log(patient);
 
     res.send(patient);
 };
