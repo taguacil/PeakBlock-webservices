@@ -21,6 +21,7 @@ ENV PYTHONIOENCODING utf-8
 RUN useradd -G users -m runner
 
 WORKDIR /mnt/
+RUN pip3 install -vv  git+https://github.com/taguacil/PeakBlock.git#subdirectory=analytics
 #Argument to rebuild from this point after an update
 ARG COMMIT_SHA1=1
 
