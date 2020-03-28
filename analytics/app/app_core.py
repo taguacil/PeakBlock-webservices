@@ -17,8 +17,8 @@ Major Revisions:
 """
 from sanic import response
 
-from app.app_settings import URL_BASE
-from app.app_settings import app_endpoints
+from analytics.app.app_settings import URL_BASE
+from analytics.app.app_settings import app_endpoints
 
 _endpoint_route = lambda x: app_endpoints.route(URL_BASE + x, methods=['GET', 'POST'])
 
