@@ -18,7 +18,7 @@ Major Revisions:
 
 import os
 import sys
-from Utilities.logger import create_logger, get_log_config
+from analytics.Utilities.logger import create_logger, get_log_config
 
 logger = create_logger(__name__)
 log_conf = get_log_config()

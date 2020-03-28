@@ -28,10 +28,10 @@ import importlib
 import traceback
 
 # User-defined library import
-import webapp_core
+from analytics import webapp_core
 
 # Logger
-from Utilities.logger import create_logger
+from analytics.Utilities.logger import create_logger
 
 logger = create_logger(__name__)
 

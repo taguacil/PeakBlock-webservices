@@ -16,7 +16,7 @@ Major Revisions:
     28-Mar-2020     1.0         Taimir        First iteration of the script
 """
 
-from package_settings import NAME, VERSION, PACKAGES, DESCRIPTION
+from analytics.package_settings import NAME, VERSION, PACKAGES, DESCRIPTION
 from setuptools import setup
 from pathlib import Path
 import json
