@@ -71,7 +71,7 @@ const patientSchema = new mongoose.Schema({
             type: Boolean,
         },
     }],
-    generalPractioner: [{
+    generalPractitioner: [{
         organization: { type: mongoose.Schema.Types.ObjectId, ref: 'Organization' },
         practitioner: { type: mongoose.Schema.Types.ObjectId, ref: 'Practitioner' },
         practitionerRole: { type: mongoose.Schema.Types.ObjectId, ref: 'PractitionerRole' },
@@ -188,12 +188,77 @@ const patientSchemaAjv = {
     },
 };
 
+const symptomsAjv = {
+    title: 'Symptoms',
+    description: 'symptoms data',
+    type: 'object',
+    required: [
+        'observations',
+        'excorona'
+    ],
+    properties: {
+        observations: {
+            type: 'object',
+            properties: {
+                bodyTemperature: {
+                    type: 'number',
+                    minumum: 35,
+                    maximum: 45,
+                },
+                cough: {
+                    type: 'boolean',
+                },
+                fatigue: {
+                    type: 'boolean',
+                },
+                pain_in_throat: {
+                    type: 'boolean',
+                },
+                dyspnea_at_rest: {
+                    type: 'boolean',
+                },
+                headache: {
+                    type: 'boolean',
+                },
+                diarrhea: {
+                    type: 'boolean',
+                },
+                nausea: {
+                    type: 'boolean',
+                },
+                loss_of_sense_of_smell: {
+                    type: 'boolean',
+                },
+            },
+            required: [
+                'bodyTemperature', 'cough', 'fatigue', 'pain_in_throat', 'dyspnea_at_rest', 'headache', 'diarrhea', 'nausea', 'loss_of_sense_of_smell',
+            ],
+            additionalProperties: false,
+        },
+        medical_conditions: {
+            type: 'array',
+            items: {
+                type: 'string',
+                minlength: 2,
+            },
+        },
+        excorona: {
+            type: 'boolean',
+        },
+    },
+};
+
 function validatePatient(patient) {
     return validator(patient, patientSchemaAjv, []);
+}
+
+function validateSymptoms(symptoms) {
+    return validator(symptoms, symptomsAjv, []);
 }
 
 
 module.exports = {
     Patient,
-    validate: validatePatient
+    validate: validatePatient,
+    validateSymptoms,
 };

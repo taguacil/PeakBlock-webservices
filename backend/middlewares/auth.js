@@ -15,11 +15,11 @@ passport.use(
         // eslint-disable-next-line consistent-return
         async (token, done) => {
             try {
-                const patient = await Patient.findById(token.patient.id);
+                const patient = await Patient.findById(token.user.id);
                 if (!patient) {
                     return done(null, false, { message: 'User not found' });
                 }
-                return done(null, token.patient);
+                return done(null, token.user);
             } catch (err) {
                 return done(err);
             }
@@ -33,7 +33,7 @@ module.exports = function authenticatePatient(req, res, next) {
         {
             session: false,
         },
-        (err, patient, info) => {
+        (err, user, info) => {
             if (err) {
                 return next(err);
             }

@@ -26,7 +26,6 @@ const humanNameSchema = new mongoose.Schema(
             end: { type: Date },
         },
     },
-    { timestamps: true },
 );
 
 
