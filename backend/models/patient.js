@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 const { humanNameSchema } = require('./humanName');
 const { contactPointSchema } = require('./contactPoint');
 const { addressSchema } = require('./address');
@@ -127,6 +128,11 @@ const patientSchema = new mongoose.Schema({
         type: Boolean,
     },
 }, { timestamps: true });
+
+patientSchema.methods.validPassword = async function verifyPassword(password) {
+    const res = await bcrypt.compare(password, this.password);
+    return res;
+};
 
 const Patient = mongoose.model('Patient', patientSchema);
 
