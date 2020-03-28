@@ -28,5 +28,46 @@ const humanNameSchema = new mongoose.Schema(
     },
 );
 
+const humanNameAJVSchema = {
+    type: 'object',
+    properties: {
+        use: {
+            type: 'string',
+            enum: ['usual', 'official', 'temp', 'nickname', 'anonymous', 'old', 'maiden'],
+        },
+        text: {
+            type: 'string',
+        },
+        family: {
+            type: 'string',
+        },
+        given: {
+            type: 'string'
+        },
+        prefix: {
+            type: 'string'
+        },
+        suffix: {
+            type: 'string'
+        },
+        period: {
+            type: 'object',
+            properties: {
+                start: {
+                    type: 'string',
+                    format: 'date-time',  
+                },
+                end: {
+                    type: 'string',
+                    format: 'date-time',
+                    formatMinimum: {
+                        $data: '1/start',
+                    },
+                },
+            },
+        },
+    },
+    additionalProperties: false,
+};
 
-module.exports = { humanNameSchema };
+module.exports = { humanNameSchema, humanNameAJVSchema };

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { codingSchema } = require('./coding');
+const { codingSchema, codingAJVSchema } = require('./coding');
 
 const codeableConceptSchema = new mongoose.Schema(
     {
@@ -10,5 +10,17 @@ const codeableConceptSchema = new mongoose.Schema(
     },
 );
 
+const codeableConceptAJVSchema = {
+    type: 'object',
+    properties: {
+        coding: {
+            type: 'array',
+            items: codingAJVSchema,
+        },
+        text: {
+            type: 'string'
+        },
+    },
+};
 
-module.exports = { codeableConceptSchema };
+module.exports = { codeableConceptSchema, codeableConceptAJVSchema };

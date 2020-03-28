@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-const { humanNameSchema } = require('./humanName');
-const { contactPointSchema } = require('./contactPoint');
-const { addressSchema } = require('./address');
-const { codeableConceptSchema } = require('./codeableConcept');
+const { humanNameSchema, humanNameAJVSchema } = require('./humanName');
+const { contactPointSchema, contactPointAJVSchema } = require('./contactPoint');
+const { addressSchema, addressAJVSchema } = require('./address');
+const { codeableConceptSchema, codeableConceptAJVSchema } = require('./codeableConcept');
 const { validator } = require('../misc/reqDataValidator');
 
 const patientSchema = new mongoose.Schema({
@@ -248,6 +248,53 @@ const symptomsAjv = {
     },
 };
 
+const patientDetailsSchemaAjv = {
+    $id: 'patientDetailsSchema',
+    title: 'PatientDetails',
+    description: 'patient data',
+    type: 'object',
+    properties: {
+        active: {
+            type: 'boolean',
+        },
+        name: humanNameAJVSchema,
+        telecom: {
+            type: 'array',
+            items: contactPointAJVSchema,
+        },
+        gender: {
+            type: 'string',
+            enum: ['female', 'male', 'other', 'unknown'],
+        },
+        birthDate: {
+            type: 'string',
+            format: 'date',
+        },
+        deceased: {
+            type: 'string',
+            format: 'date-time',
+        },
+        address: {
+            type: 'array',
+            items: addressAJVSchema,
+        },
+        maritalStatus: codeableConceptAJVSchema,
+        mutlipleBirthBoolean: { // Indicates whether the patient is part of a multiple (boolean) or indicates the actual birth order (integer).
+            type: 'boolean',
+        },
+        mutlipleBirthInteger: { // Indicates whether the patient is part of a multiple (boolean) or indicates the actual birth order (integer).
+            type: 'number',
+        },
+        photo: {
+            type: 'array',
+            items: {
+                type: 'string'
+            },
+        },
+        // TODO: continue the rest of the data
+    },
+};
+
 function validatePatient(patient) {
     return validator(patient, patientSchemaAjv, []);
 }
@@ -256,9 +303,13 @@ function validateSymptoms(symptoms) {
     return validator(symptoms, symptomsAjv, []);
 }
 
+function validateDetails(details) {
+    return validator(details, patientDetailsSchemaAjv, []);
+}
 
 module.exports = {
     Patient,
     validate: validatePatient,
     validateSymptoms,
+    validateDetails,
 };

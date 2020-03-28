@@ -22,8 +22,44 @@ const contactPointSchema = new mongoose.Schema(
             end: { type: Date },
         },
     },
-    { timestamps: true },
 );
 
+const contactPointAJVSchema = {
+    type: 'object',
+    properties: {
+        system: {
+            type: 'string',
+            enum: ['phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'],
+        },
+        value: {
+            type: 'string',
+        },
+        use: {
+            type: 'string',
+            enum: ['home', 'work', 'temp', 'old', 'mobile'],
+        },
+        rank: {
+            type: 'number',
+            minimum: 1,
+        },
+        period: {
+            type: 'object',
+            properties: {
+                start: {
+                    type: 'string',
+                    format: 'date-time',  
+                },
+                end: {
+                    type: 'string',
+                    format: 'date-time',
+                    formatMinimum: {
+                        $data: '1/start',
+                    },
+                },
+            },
+        },
+    },
+    additionalProperties: false,
+};
 
-module.exports = { contactPointSchema };
+module.exports = { contactPointSchema, contactPointAJVSchema };

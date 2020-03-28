@@ -36,8 +36,61 @@ const addressSchema = new mongoose.Schema(
             end: { type: Date },
         },
     },
-    { timestamps: true },
 );
 
+const addressAJVSchema = {
+    type: 'object',
+    properties: {
+        'use': {
+            type: 'string',
+            enum: ['home', 'work', 'temp', 'old', 'billing'],
+        },
+        'type': {
+            type: 'string',
+            enum: ['postal', 'physical', 'both'],
+        },
+        'text': { // Text representation of the address
+            type: 'string',
+        },
+        'line': {
+            type: 'array',
+            items: {
+                type: 'string',
+            }
+        },
+        'city': {
+            type: 'string',
+        },
+        'district': {
+            type: 'string',
+        },
+        'state': {
+            type: 'string',
+        },
+        'postalCode': {
+            type: 'string',
+        },
+        'country': {
+            type: 'string',
+        },
+        'period': {
+            type: 'object',
+            properties: {
+                start: {
+                    type: 'string',
+                    format: 'date-time',  
+                },
+                end: {
+                    type: 'string',
+                    format: 'date-time',
+                    formatMinimum: {
+                        $data: '1/start',
+                    },
+                },
+            },
+        },
+    },
+    additionalProperties: false,
+};
 
-module.exports = { addressSchema };
+module.exports = { addressSchema, addressAJVSchema };

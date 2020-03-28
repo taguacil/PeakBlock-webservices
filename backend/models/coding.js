@@ -24,5 +24,26 @@ const codingSchema = new mongoose.Schema(
     },
 );
 
+const codingAJVSchema = {
+    type: 'object',
+    properties: {
+        system: {
+            type: 'string',
+            pattern: '\w+:(\/?\/?)[^\s]+',
+        },
+        version: {
+            type: 'string',
+        },
+        code: {
+            type: 'string',
+        },
+        display: {
+            type: 'string',
+        },
+        userSelected: {
+            type: 'boolean',
+        },
+    },
+}
 
-module.exports = { codingSchema };
+module.exports = { codingSchema, codingAJVSchema };
