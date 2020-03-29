@@ -12,7 +12,7 @@ variables:
   dockerRegistryServiceConnection: '64c83f37-a048-4941-a52c-8e76e8ce5996'
   imageRepository: 'peakblockbackend'
   containerRegistry: 'cohub.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/backend'
+  dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'cohube837-auth'
 
@@ -46,9 +46,8 @@ stages:
         dockerfile: $(backenddockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection) 
         
-    - upload: backend/manifests
-      artifact: backend_manifests
-
+    - upload: manifests
+      artifact: manifests
 - stage: DeployBackend
   displayName: Deploy backend stage
   dependsOn: BuildBackend
@@ -75,8 +74,8 @@ stages:
             inputs:
               action: deploy
               manifests: |
-                $(Pipeline.Workspace)/backend_manifests/deployment.yml
-                $(Pipeline.Workspace)/backend_manifests/service.yml
+                $(Pipeline.Workspace)/manifests/deployment.yml
+                $(Pipeline.Workspace)/manifests/service.yml
               imagePullSecrets: |
                 $(imagePullSecret)
               containers: |
