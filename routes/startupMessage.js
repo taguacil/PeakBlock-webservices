@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const axios = require('axios');
+const config = require('config');
 
 const router = express.Router();
 
@@ -9,15 +10,15 @@ router.get('/', (req, res) => {
 });
 
 router.get('/test', (req, res) => {
-    // setInterval(() => {} , 5*1000);
-    axios.get('http://localhost:5555/api/ai/home')
-        .then(response => {
+    const pythonHost = config.get('pythonIP');
+    axios.get(`http://${pythonHost}:5555/api/ai/home`)
+        .then((response) => {
             console.log(response.data);
             res.send(response.data);
             // res.write(response.data, encoding='utf8')
         })
-        .catch(error => {
-            console.log('ERROOOORRRR');    
+        .catch((error) => {
+            console.log('ERROOOORRRR');
             console.log(error);
         });
 });

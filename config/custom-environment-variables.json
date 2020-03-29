@@ -1,4 +1,5 @@
 {
     "jwtPrivateKey": "jwtSecretKey",
-    "db": "db"
+    "db": "db",
+    "pythonIP": "PEAKBLOCKAI_SERVICE_HOST"
 }
