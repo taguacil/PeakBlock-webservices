@@ -9,12 +9,12 @@ variables:
 
   # Container registry service connection established during pipeline creation
   db : 'mongodb://$(db_username):$(db_password)@$(db_url):$(db_port)'
-  dockerRegistryServiceConnection: '64c83f37-a048-4941-a52c-8e76e8ce5996'
+  dockerRegistryServiceConnection: '0648ad28-e43e-4dc7-ac96-867b27c6c66e'
   imageRepository: 'peakblockbackend'
   containerRegistry: 'cohub.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'cohube837-auth'
+  imagePullSecret: 'cohub3398df3e-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -56,7 +56,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'taguacilPeakBlock.ingress-basic'
+    environment: 'peakblockbackend.ingress-basic'
     strategy:
       runOnce:
         deploy:
