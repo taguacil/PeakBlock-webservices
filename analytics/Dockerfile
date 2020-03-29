@@ -56,4 +56,4 @@ ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 WORKDIR /mnt/analytics
 CMD ["bash" ,"-c", "python3 -m run " ]
 
-#docker stop my_service;docker rm my_service;docker build -t my_service_image -f deployment/Dockerfile . && docker run -ti --ulimit core=0:0 --user runner --rm -v $(pwd)/..:/mnt --name my_service my_service_image
+#docker stop my_service;docker rm my_service;docker build -t my_service_image -f analytics/deployment/Dockerfile . && docker run -ti --ulimit core=0:0 --user runner --rm -v $(pwd)/..:/mnt --name my_service my_service_image
