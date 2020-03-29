@@ -12,7 +12,7 @@ variables:
   dockerRegistryServiceConnection: '64c83f37-a048-4941-a52c-8e76e8ce5996'
   imageRepository: 'peakblockbackend'
   containerRegistry: 'cohub.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: './Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'cohube837-auth'
 
