@@ -9,12 +9,12 @@ variables:
 
   # Container registry service connection established during pipeline creation
   db : 'mongodb://$(db_username):$(db_password)@$(db_url):$(db_port)'
-  dockerRegistryServiceConnection: '0648ad28-e43e-4dc7-ac96-867b27c6c66e'
+  dockerRegistryServiceConnection: 'ddd74217-4da6-4b40-b017-77d4b357efb2'
   imageRepository: 'peakblockbackend'
   containerRegistry: 'cohub.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'cohub3398df3e-auth'
+  imagePullSecret: 'cohub2aca-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
