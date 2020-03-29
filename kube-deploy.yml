@@ -37,7 +37,6 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: $(tag)
         arguments: '--build-arg db_var=$(db)'
-        buildContext: '$(Build.SourcesDirectory)/backend'
     - task: Docker@2
       displayName: Push the image to container registry
       inputs:
