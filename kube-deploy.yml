@@ -12,9 +12,7 @@ variables:
   dockerRegistryServiceConnection: '64c83f37-a048-4941-a52c-8e76e8ce5996'
   imageRepository: 'peakblockbackend'
   containerRegistry: 'cohub.azurecr.io'
-  backenddockerfilePath: '$(Pipeline.Workspace)/backend/Dockerfile'
-  analyticsdockerfilePath: '$(Pipeline.Workspace)/analytics/Dockerfile'
-  frontenddockerfilePath: '$(Pipeline.Workspace)/frontend/Dockerfile'
+  dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'cohube837-auth'
 
@@ -35,10 +33,11 @@ stages:
       inputs:
         command: 'build'
         repository: $(imageRepository)
-        dockerfile: $(backenddockerfilePath)
+        dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: $(tag)
         arguments: '--build-arg db_var=$(db)'
+        buildContext: '$(Build.SourcesDirectory)/backend'
     - task: Docker@2
       displayName: Push the image to container registry
       inputs:
@@ -76,10 +75,9 @@ stages:
             inputs:
               action: deploy
               manifests: |
-                $(Pipeline.Workspace)/backend/manifests/deployment.yml
-                $(Pipeline.Workspace)/backend/manifests/service.yml
+                $(Pipeline.Workspace)/backend_manifests/deployment.yml
+                $(Pipeline.Workspace)/backend_manifests/service.yml
               imagePullSecrets: |
                 $(imagePullSecret)
               containers: |
                 $(containerRegistry)/$(imageRepository):$(tag)
-
