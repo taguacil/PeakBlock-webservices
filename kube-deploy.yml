@@ -34,8 +34,8 @@ stages:
       displayName: Build the docker image 
       inputs:
         command: 'build'
-        repository: $(backenddockerfilePath)
-        dockerfile: $(dockerfilePath)
+        repository: $(imageRepository)
+        dockerfile: $(backenddockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: $(tag)
         arguments: '--build-arg db_var=$(db)'
@@ -43,8 +43,8 @@ stages:
       displayName: Push the image to container registry
       inputs:
         command: 'push'
-        repository: $(backenddockerfilePath)
-        dockerfile: $(dockerfilePath)
+        repository: $(imageRepository)
+        dockerfile: $(backenddockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection) 
         
     - upload: backend/manifests
