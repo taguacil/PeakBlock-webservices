@@ -39,7 +39,7 @@ const patientSchema = new mongoose.Schema({
     deceased: {
         type: Date, // if undefined, then not dead yet
     },
-    address: [addressSchema],
+    address: addressSchema,
     maritalStatus: codeableConceptSchema,
     mutlipleBirthBoolean: { // Indicates whether the patient is part of a multiple (boolean) or indicates the actual birth order (integer).
         type: Boolean,
@@ -71,12 +71,13 @@ const patientSchema = new mongoose.Schema({
             type: Boolean,
         },
     }],
-    generalPractitioner: [{
-        organization: { type: mongoose.Schema.Types.ObjectId, ref: 'Organization' },
-        practitioner: { type: mongoose.Schema.Types.ObjectId, ref: 'Practitioner' },
-        practitionerRole: { type: mongoose.Schema.Types.ObjectId, ref: 'PractitionerRole' },
+    generalPractitioner: [{ type: mongoose.Schema.Types.ObjectId, ref: 'PractitionerRole' }],
+    // generalPractitioner: [{
+        // organization: { type: mongoose.Schema.Types.ObjectId, ref: 'Organization' },
+        // practitioner: { type: mongoose.Schema.Types.ObjectId, ref: 'Practitioner' },
+        // practitionerRole: { type: mongoose.Schema.Types.ObjectId, ref: 'PractitionerRole' },
         // [{ Reference(Organization|Practitioner|PractitionerRole) }], // Patient's nominated primary care provider
-    }],
+    // }],
     managingOrganization: { type: mongoose.Schema.Types.ObjectId, ref: 'Organization' },
     link: [{ // Link to another patient resource that concerns the same actual person
         other: { // TODO: { Reference(Patient|RelatedPerson) }, // R!  The other patient or related person resource that the link refers to
@@ -116,17 +117,31 @@ const patientSchema = new mongoose.Schema({
         loss_of_sense_of_smell: {
             type: Boolean,
         },
+        chest_pain: {
+            type: Boolean,
+        },
+        muscle_ache: {
+            type: Boolean,
+        },
+        runny_nose: {
+            type: Boolean,
+        },
+        confusion: {
+            type: Boolean,
+        },
     },
     medical_conditions: [{ // diabetes, heart disease, allergies,..
         type: String,
     }],
-    covid_state: {
-        type: String,
-        enum: ['certain', 'probable', 'possible', 'certainly_not'],
+    covid_probability: {
+        type: Number,
     },
     excorona: {
         type: Boolean,
     },
+    recovered: {
+        type: Boolean,
+    }
 }, { timestamps: true });
 
 patientSchema.methods.validPassword = async function verifyPassword(password) {
@@ -194,7 +209,7 @@ const symptomsAjv = {
     type: 'object',
     required: [
         'observations',
-        'excorona'
+        'excorona',
     ],
     properties: {
         observations: {
@@ -229,6 +244,18 @@ const symptomsAjv = {
                 loss_of_sense_of_smell: {
                     type: 'boolean',
                 },
+                chest_pain: {
+                    type: 'boolean',
+                },
+                muscle_ache: {
+                    type: 'boolean',
+                },
+                runny_nose: {
+                    type: 'boolean',
+                },
+                confusion: {
+                    type: 'boolean',
+                },
             },
             required: [
                 'bodyTemperature', 'cough', 'fatigue', 'pain_in_throat', 'dyspnea_at_rest', 'headache', 'diarrhea', 'nausea', 'loss_of_sense_of_smell',
@@ -244,6 +271,15 @@ const symptomsAjv = {
         },
         excorona: {
             type: 'boolean',
+        },
+        address: {
+            type: 'object',
+            required: ['city'],
+            properties: {
+                city: {
+                    type: 'string',
+                },
+            },
         },
     },
 };
