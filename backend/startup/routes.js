@@ -7,6 +7,7 @@ const authToken = require('../middlewares/auth');
 const startupMessage = require('../routes/startupMessage');
 const authUserPassword = require('../routes/auth');
 const patients = require('../routes/patient');
+const organizations = require('../routes/organization');
 
 module.exports = function initRoutes(app) {
     app.use(cors());
@@ -16,5 +17,6 @@ module.exports = function initRoutes(app) {
     app.use('/', startupMessage);
     app.use('/api/node/login', authUserPassword);
     app.use('/api/node/patients', patients);
+    app.use('/api/node/organizations', organizations);
     app.use(error);
 };

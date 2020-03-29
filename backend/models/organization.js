@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 const { codeableConceptSchema } = require('./codeableConcept');
 const { contactPointSchema } = require('./contactPoint');
 const { addressSchema } = require('./address');
@@ -6,6 +7,19 @@ const { humanNameSchema } = require('./humanName');
 
 const organizationSchema = new mongoose.Schema(
     {
+        email: {
+            type: String,
+            minlength: 5,
+            maxlength: 255,
+            unique: true,
+            required: true,
+        },
+        password: {
+            type: String,
+            minlength: 8,
+            maxlength: 1024,
+            required: true,
+        },    
         active: {
             type: Boolean,
         },
@@ -25,10 +39,14 @@ const organizationSchema = new mongoose.Schema(
             telecom: [contactPointSchema],
             address: addressSchema,
         }],
-        endpoint: { type: mongoose.Schema.Types.ObjectId, ref: 'Endpoint' },
     },
     { timestamps: true },
 );
+
+organizationSchema.methods.validPassword = async function verifyPassword(password) {
+    const res = await bcrypt.compare(password, this.password);
+    return res;
+};
 
 const Organization = mongoose.model('Organization', organizationSchema);
 

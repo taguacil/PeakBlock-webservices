@@ -33,13 +33,13 @@ exports.register = async (req, res) => {
 };
 
 exports.get = async (req, res) => {
-    if (!req.user) return res.status(403).send({ message: 'Please Login!' });
+    if (!(req.user && req.user.role === 'patient')) return res.status(403).send({ message: 'Please Login!' });
     const patient = await Patient.findById(req.user.id);
     res.send(patient);
 }
 
 exports.fillSymptoms = async (req, res) => {
-    if (!req.user) return res.status(403).send({ message: 'Please Login!' });
+    if (!(req.user && req.user.role === 'patient')) return res.status(403).send({ message: 'Please Login!' });
 
     const error = validateSymptoms(req.body);
     if (error) return res.status(400).send(error);
@@ -54,7 +54,7 @@ exports.fillSymptoms = async (req, res) => {
 };
 
 exports.updateDetails = async (req, res) => {
-    if (!req.user) return res.status(403).send({ message: 'Please Login!' });
+    if (!(req.user && req.user.role === 'patient')) return res.status(403).send({ message: 'Please Login!' });
 
     const error = validateDetails(req.body);
     if (error) return res.status(400).send(error);

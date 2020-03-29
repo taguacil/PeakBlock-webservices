@@ -3,6 +3,7 @@ const ExtractJWT = require('passport-jwt').ExtractJwt;
 const config = require('config');
 const passport = require('passport');
 const { Patient } = require('../models/patient');
+const { Organization } = require('../models/organization');
 
 const jwtPrivateKey = config.get('jwtPrivateKey');
 
@@ -15,11 +16,20 @@ passport.use(
         // eslint-disable-next-line consistent-return
         async (token, done) => {
             try {
-                const patient = await Patient.findById(token.user.id);
-                if (!patient) {
-                    return done(null, false, { message: 'User not found' });
+                if (token.user.role === 'patient') {
+                    const patient = await Patient.findById(token.user.id);
+                    if (!patient) {
+                        return done(null, false, { message: 'User not found' });
+                    }
+                    return done(null, token.user);
+                } else if (token.user.role === 'organization') {
+                    const organization = await Organization.findById(token.user.id);
+                    if (!organization) {
+                        return done(null, false, { message: 'User not found' });
+                    }
+                    return done(null, token.user);
                 }
-                return done(null, token.user);
+                
             } catch (err) {
                 return done(err);
             }
@@ -27,7 +37,7 @@ passport.use(
     ),
 );
 
-module.exports = function authenticatePatient(req, res, next) {
+module.exports = function authenticate(req, res, next) {
     passport.authenticate(
         'jwt',
         {
@@ -49,7 +59,7 @@ module.exports = function authenticatePatient(req, res, next) {
                         .status(401)
                         .send({ message: 'Token is invalid' });
                 }
-                if (info.message === 'Patient not found') {
+                if (info.message === 'User not found') {
                     return res.status(401).send(info);
                 }
             }
