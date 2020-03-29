@@ -52,7 +52,7 @@ stages:
 
 - stage: DeployBackend
   displayName: Deploy backend stage
-  dependsOn: Build
+  dependsOn: BuildBackend
 
   jobs:
   - deployment: Deploy
