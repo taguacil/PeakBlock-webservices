@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 const { codeableConceptSchema } = require('./codeableConcept');
 const { contactPointSchema } = require('./contactPoint');
 const { addressSchema } = require('./address');
@@ -7,7 +8,19 @@ const { identifierSchema } = require('./identifier');
 
 const practitionerSchema = new mongoose.Schema(
     {
-        identifier: [identifierSchema], // An identifier for the person as this agent
+        email: {
+            type: String,
+            minlength: 5,
+            maxlength: 255,
+            unique: true,
+            required: true,
+        },
+        password: {
+            type: String,
+            minlength: 8,
+            maxlength: 1024,
+            required: true,
+        },
         active: {
             type: Boolean,
         },
@@ -35,6 +48,11 @@ const practitionerSchema = new mongoose.Schema(
     },
     { timestamps: true },
 );
+
+practitionerSchema.methods.validPassword = async function verifyPassword(password) {
+    const res = await bcrypt.compare(password, this.password);
+    return res;
+};
 
 const Practitioner = mongoose.model('Practitioner', practitionerSchema);
 

@@ -4,6 +4,7 @@ const config = require('config');
 const passport = require('passport');
 const { Patient } = require('../models/patient');
 const { Organization } = require('../models/organization');
+const { Practitioner } = require('../models/practitioner');
 
 const jwtPrivateKey = config.get('jwtPrivateKey');
 
@@ -22,14 +23,19 @@ passport.use(
                         return done(null, false, { message: 'User not found' });
                     }
                     return done(null, token.user);
-                } else if (token.user.role === 'organization') {
+                } if (token.user.role === 'organization') {
                     const organization = await Organization.findById(token.user.id);
                     if (!organization) {
                         return done(null, false, { message: 'User not found' });
                     }
                     return done(null, token.user);
+                } if (token.user.role === 'practitioner') {
+                    const practitioner = await Practitioner.findById(token.user.id);
+                    if (!practitioner) {
+                        return done(null, false, { message: 'User not found' });
+                    }
+                    return done(null, token.user);
                 }
-                
             } catch (err) {
                 return done(err);
             }
