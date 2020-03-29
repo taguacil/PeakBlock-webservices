@@ -1,3 +1,4 @@
 {
-    "jwtPrivateKey": "jwtSecretKey"
+    "jwtPrivateKey": "jwtSecretKey",
+    "db": "db"
 }
