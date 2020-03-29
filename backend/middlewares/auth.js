@@ -2,7 +2,8 @@ const JWTStrategy = require('passport-jwt').Strategy;
 const ExtractJWT = require('passport-jwt').ExtractJwt;
 const config = require('config');
 const passport = require('passport');
-const { User } = require('../models/user');
+const { Patient } = require('../models/patient');
+const { Organization } = require('../models/organization');
 
 const jwtPrivateKey = config.get('jwtPrivateKey');
 
@@ -15,11 +16,20 @@ passport.use(
         // eslint-disable-next-line consistent-return
         async (token, done) => {
             try {
-                const user = await User.findById(token.user.id);
-                if (!user) {
-                    return done(null, false, { message: 'User not found' });
+                if (token.user.role === 'patient') {
+                    const patient = await Patient.findById(token.user.id);
+                    if (!patient) {
+                        return done(null, false, { message: 'User not found' });
+                    }
+                    return done(null, token.user);
+                } else if (token.user.role === 'organization') {
+                    const organization = await Organization.findById(token.user.id);
+                    if (!organization) {
+                        return done(null, false, { message: 'User not found' });
+                    }
+                    return done(null, token.user);
                 }
-                return done(null, token.user);
+                
             } catch (err) {
                 return done(err);
             }
@@ -27,7 +37,7 @@ passport.use(
     ),
 );
 
-module.exports = function authenticateUser(req, res, next) {
+module.exports = function authenticate(req, res, next) {
     passport.authenticate(
         'jwt',
         {

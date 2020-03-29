@@ -5,8 +5,9 @@ const cors = require('cors');
 const error = require('../middlewares/error');
 const authToken = require('../middlewares/auth');
 const startupMessage = require('../routes/startupMessage');
-const users = require('../routes/users');
 const authUserPassword = require('../routes/auth');
+const patients = require('../routes/patient');
+const organizations = require('../routes/organization');
 
 module.exports = function initRoutes(app) {
     app.use(cors());
@@ -14,7 +15,8 @@ module.exports = function initRoutes(app) {
     app.use(passport.initialize());
     app.use(authToken);
     app.use('/', startupMessage);
-    app.use('/api/login', authUserPassword);
-    app.use('/api/users', users);
+    app.use('/api/node/login', authUserPassword);
+    app.use('/api/node/patients', patients);
+    app.use('/api/node/organizations', organizations);
     app.use(error);
 };
