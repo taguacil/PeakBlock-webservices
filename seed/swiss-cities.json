@@ -1,0 +1,2684 @@
+[
+   {
+      "Country": "ch",
+      "City": "aadorf",
+      "AccentCity": "Aadorf",
+      "Region": 19,
+      "Population": 7100,
+      "Latitude": 47.492721,
+      "Longitude": 8.898325999999997
+   },
+   {
+      "Country": "ch",
+      "City": "aarau",
+      "AccentCity": "Aarau",
+      "Region": 1,
+      "Population": 15007,
+      "Latitude": 47.389616,
+      "Longitude": 8.052354
+   },
+   {
+      "Country": "ch",
+      "City": "aarburg",
+      "AccentCity": "Aarburg",
+      "Region": 1,
+      "Population": 6484,
+      "Latitude": 47.319634,
+      "Longitude": 7.901413000000002
+   },
+   {
+      "Country": "ch",
+      "City": "adliswil",
+      "AccentCity": "Adliswil",
+      "Region": 25,
+      "Population": 16144,
+      "Latitude": 47.311896,
+      "Longitude": 8.528684
+   },
+   {
+      "Country": "ch",
+      "City": "aesch",
+      "AccentCity": "Aesch",
+      "Region": 4,
+      "Population": 10396,
+      "Latitude": 47.469456,
+      "Longitude": 7.595763000000002
+   },
+   {
+      "Country": "ch",
+      "City": "affoltern",
+      "AccentCity": "Affoltern",
+      "Region": 1,
+      "Population": 10415,
+      "Latitude": 47.281224,
+      "Longitude": 8.45346
+   },
+   {
+      "Country": "ch",
+      "City": "aigle",
+      "AccentCity": "Aigle",
+      "Region": 23,
+      "Population": 7897,
+      "Latitude": 46.318103,
+      "Longitude": 6.964567
+   },
+   {
+      "Country": "ch",
+      "City": "allschwil",
+      "AccentCity": "Allschwil",
+      "Region": 4,
+      "Population": 18745,
+      "Latitude": 47.550744,
+      "Longitude": 7.535994
+   },
+   {
+      "Country": "ch",
+      "City": "alpnach",
+      "AccentCity": "Alpnach",
+      "Region": 14,
+      "Population": 5139,
+      "Latitude": 46.940195,
+      "Longitude": 8.274263000000001
+   },
+   {
+      "Country": "ch",
+      "City": "altdorf",
+      "AccentCity": "Altdorf",
+      "Region": 21,
+      "Population": 8833,
+      "Latitude": 46.880422,
+      "Longitude": 8.644409
+   },
+   {
+      "Country": "ch",
+      "City": "altstatten",
+      "AccentCity": "Altstatten",
+      "Region": 15,
+      "Population": 10585,
+      "Latitude": 47.379433,
+      "Longitude": 9.548989
+   },
+   {
+      "Country": "ch",
+      "City": "amriswil",
+      "AccentCity": "Amriswil",
+      "Region": 15,
+      "Population": 11543,
+      "Latitude": 47.546992,
+      "Longitude": 9.298365
+   },
+   {
+      "Country": "ch",
+      "City": "appenzell",
+      "AccentCity": "Appenzell",
+      "Region": 10,
+      "Population": 5541,
+      "Latitude": 47.32891400000001,
+      "Longitude": 9.410547
+   },
+   {
+      "Country": "ch",
+      "City": "arbon",
+      "AccentCity": "Arbon",
+      "Region": 15,
+      "Population": 13125,
+      "Latitude": 47.515392,
+      "Longitude": 9.434779
+   },
+   {
+      "Country": "ch",
+      "City": "arlesheim",
+      "AccentCity": "Arlesheim",
+      "Region": 4,
+      "Population": 9737,
+      "Latitude": 47.495875,
+      "Longitude": 7.619839
+   },
+   {
+      "Country": "ch",
+      "City": "arosa",
+      "AccentCity": "Arosa",
+      "Region": 9,
+      "Population": 2162,
+      "Latitude": 46.777926,
+      "Longitude": 9.676206
+   },
+   {
+      "Country": "ch",
+      "City": "arth",
+      "AccentCity": "Arth",
+      "Region": 17,
+      "Population": 10100,
+      "Latitude": 47.06337,
+      "Longitude": 8.523485
+   },
+   {
+      "Country": "ch",
+      "City": "ascona",
+      "AccentCity": "Ascona",
+      "Region": 20,
+      "Population": 5236,
+      "Latitude": 46.156255,
+      "Longitude": 8.778395
+   },
+   {
+      "Country": "ch",
+      "City": "au",
+      "AccentCity": "Au",
+      "Region": 15,
+      "Population": 6864,
+      "Latitude": 47.432211,
+      "Longitude": 9.633869
+   },
+   {
+      "Country": "ch",
+      "City": "baar",
+      "AccentCity": "Baar",
+      "Region": 24,
+      "Population": 20752,
+      "Latitude": 47.196254,
+      "Longitude": 8.529544
+   },
+   {
+      "Country": "ch",
+      "City": "baden",
+      "AccentCity": "Baden",
+      "Region": 1,
+      "Population": 16659,
+      "Latitude": 47.478029,
+      "Longitude": 8.302764
+   },
+   {
+      "Country": "ch",
+      "City": "bad ragaz",
+      "AccentCity": "Bad Ragaz",
+      "Region": 9,
+      "Population": 4786,
+      "Latitude": 47.005367,
+      "Longitude": 9.501217
+   },
+   {
+      "Country": "ch",
+      "City": "bagnes",
+      "AccentCity": "Bagnes",
+      "Region": 22,
+      "Population": 7114,
+      "Latitude": 46.083333,
+      "Longitude": 7.216667
+   },
+   {
+      "Country": "ch",
+      "City": "balsthal",
+      "AccentCity": "Balsthal",
+      "Region": 1,
+      "Population": 5576,
+      "Latitude": 47.31591,
+      "Longitude": 7.693047
+   },
+   {
+      "Country": "ch",
+      "City": "basel",
+      "AccentCity": "Basel",
+      "Region": 4,
+      "Population": 164474,
+      "Latitude": 47.558395,
+      "Longitude": 7.573271000000001
+   },
+   {
+      "Country": "ch",
+      "City": "bassersdorf",
+      "AccentCity": "Bassersdorf",
+      "Region": 25,
+      "Population": 9860,
+      "Latitude": 47.443184,
+      "Longitude": 8.625859
+   },
+   {
+      "Country": "ch",
+      "City": "bellinzona",
+      "AccentCity": "Bellinzona",
+      "Region": 20,
+      "Population": 17006,
+      "Latitude": 46.195201,
+      "Longitude": 9.02283
+   },
+   {
+      "Country": "ch",
+      "City": "belp",
+      "AccentCity": "Belp",
+      "Region": 5,
+      "Population": 9594,
+      "Latitude": 46.890805,
+      "Longitude": 7.499042
+   },
+   {
+      "Country": "ch",
+      "City": "bern",
+      "AccentCity": "Bern",
+      "Region": 5,
+      "Population": 123018,
+      "Latitude": 46.916667,
+      "Longitude": 7.466667
+   },
+   {
+      "Country": "ch",
+      "City": "bernex",
+      "AccentCity": "Bernex",
+      "Region": 7,
+      "Population": 9266,
+      "Latitude": 46.177162,
+      "Longitude": 6.074159
+   },
+   {
+      "Country": "ch",
+      "City": "bex",
+      "AccentCity": "Bex",
+      "Region": 23,
+      "Population": 5995,
+      "Latitude": 46.252137,
+      "Longitude": 7.011408
+   },
+   {
+      "Country": "ch",
+      "City": "biasca",
+      "AccentCity": "Biasca",
+      "Region": 20,
+      "Population": 5937,
+      "Latitude": 46.360581,
+      "Longitude": 8.969103
+   },
+   {
+      "Country": "ch",
+      "City": "biberist",
+      "AccentCity": "Biberist",
+      "Region": 18,
+      "Population": 7463,
+      "Latitude": 47.185591,
+      "Longitude": 7.56005
+   },
+   {
+      "Country": "ch",
+      "City": "biel",
+      "AccentCity": "Biel",
+      "Region": 5,
+      "Population": 49675,
+      "Latitude": 47.141666,
+      "Longitude": 7.257589
+   },
+   {
+      "Country": "ch",
+      "City": "binningen",
+      "AccentCity": "Binningen",
+      "Region": 4,
+      "Population": 15046,
+      "Latitude": 47.533588,
+      "Longitude": 7.568511999999999
+   },
+   {
+      "Country": "ch",
+      "City": "birmensdorf",
+      "AccentCity": "Birmensdorf",
+      "Region": 25,
+      "Population": 5630,
+      "Latitude": 47.35465,
+      "Longitude": 8.437566
+   },
+   {
+      "Country": "ch",
+      "City": "birsfelden",
+      "AccentCity": "Birsfelden",
+      "Region": 4,
+      "Population": 10627,
+      "Latitude": 47.55495300000001,
+      "Longitude": 7.645867999999999
+   },
+   {
+      "Country": "ch",
+      "City": "blonay",
+      "AccentCity": "Blonay",
+      "Region": 23,
+      "Population": 5294,
+      "Latitude": 46.465737,
+      "Longitude": 6.895053
+   },
+   {
+      "Country": "ch",
+      "City": "bolligen",
+      "AccentCity": "Bolligen",
+      "Region": 5,
+      "Population": 6291,
+      "Latitude": 46.974194,
+      "Longitude": 7.495697
+   },
+   {
+      "Country": "ch",
+      "City": "bottmingen",
+      "AccentCity": "Bottmingen",
+      "Region": 4,
+      "Population": 5956,
+      "Latitude": 47.522735,
+      "Longitude": 7.569016
+   },
+   {
+      "Country": "ch",
+      "City": "boudry",
+      "AccentCity": "Boudry",
+      "Region": 12,
+      "Population": 5038,
+      "Latitude": 46.953019,
+      "Longitude": 6.83897
+   },
+   {
+      "Country": "ch",
+      "City": "bremgarten",
+      "AccentCity": "Bremgarten",
+      "Region": 1,
+      "Population": 6702,
+      "Latitude": 47.352604,
+      "Longitude": 8.329955
+   },
+   {
+      "Country": "ch",
+      "City": "brugg",
+      "AccentCity": "Brugg",
+      "Region": 1,
+      "Population": 9159,
+      "Latitude": 47.481527,
+      "Longitude": 8.203014
+   },
+   {
+      "Country": "ch",
+      "City": "bubikon",
+      "AccentCity": "Bubikon",
+      "Region": 17,
+      "Population": 6160,
+      "Latitude": 47.267748,
+      "Longitude": 8.818391
+   },
+   {
+      "Country": "ch",
+      "City": "buchrain",
+      "AccentCity": "Buchrain",
+      "Region": 11,
+      "Population": 5802,
+      "Latitude": 47.086016,
+      "Longitude": 8.346213
+   },
+   {
+      "Country": "ch",
+      "City": "buchs",
+      "AccentCity": "Buchs",
+      "Region": 1,
+      "Population": 6397,
+      "Latitude": 47.387774,
+      "Longitude": 8.073525
+   },
+   {
+      "Country": "ch",
+      "City": "buchs",
+      "AccentCity": "Buchs",
+      "Region": 10,
+      "Population": 10361,
+      "Latitude": 47.169856,
+      "Longitude": 9.47544
+   },
+   {
+      "Country": "ch",
+      "City": "bulach",
+      "AccentCity": "Bulach",
+      "Region": 1,
+      "Population": 14776,
+      "Latitude": 47.518898,
+      "Longitude": 8.536967
+   },
+   {
+      "Country": "ch",
+      "City": "bulle",
+      "AccentCity": "Bulle",
+      "Region": 6,
+      "Population": 12460,
+      "Latitude": 46.619499,
+      "Longitude": 7.056742999999999
+   },
+   {
+      "Country": "ch",
+      "City": "buochs",
+      "AccentCity": "Buochs",
+      "Region": 13,
+      "Population": 5272,
+      "Latitude": 46.973976,
+      "Longitude": 8.422788
+   },
+   {
+      "Country": "ch",
+      "City": "burgdorf",
+      "AccentCity": "Burgdorf",
+      "Region": 5,
+      "Population": 14943,
+      "Latitude": 47.058495,
+      "Longitude": 7.622139
+   },
+   {
+      "Country": "ch",
+      "City": "bussigny",
+      "AccentCity": "Bussigny",
+      "Region": 23,
+      "Population": 7317,
+      "Latitude": 46.551102,
+      "Longitude": 6.555973
+   },
+   {
+      "Country": "ch",
+      "City": "carouge",
+      "AccentCity": "Carouge",
+      "Region": 7,
+      "Population": 19688,
+      "Latitude": 46.186153,
+      "Longitude": 6.1346300000000005
+   },
+   {
+      "Country": "ch",
+      "City": "cham",
+      "AccentCity": "Cham",
+      "Region": 24,
+      "Population": 13431,
+      "Latitude": 47.182126,
+      "Longitude": 8.463576
+   },
+   {
+      "Country": "ch",
+      "City": "chavannes",
+      "AccentCity": "Chavannes",
+      "Region": 23,
+      "Population": 5740,
+      "Latitude": 46.528825,
+      "Longitude": 6.592058
+   },
+   {
+      "Country": "ch",
+      "City": "chene-bougeries",
+      "AccentCity": "Chene-Bougeries",
+      "Region": 7,
+      "Population": 9821,
+      "Latitude": 46.197545,
+      "Longitude": 6.162082
+   },
+   {
+      "Country": "ch",
+      "City": "chene-bourg",
+      "AccentCity": "Chene-Bourg",
+      "Region": 7,
+      "Population": 8038,
+      "Latitude": 46.193049,
+      "Longitude": 6.196567
+   },
+   {
+      "Country": "ch",
+      "City": "chiasso",
+      "AccentCity": "Chiasso",
+      "Region": 20,
+      "Population": 8232,
+      "Latitude": 45.83491,
+      "Longitude": 9.02054
+   },
+   {
+      "Country": "ch",
+      "City": "chur",
+      "AccentCity": "Chur",
+      "Region": 9,
+      "Population": 32874,
+      "Latitude": 46.85675300000001,
+      "Longitude": 9.526917999999998
+   },
+   {
+      "Country": "ch",
+      "City": "colombier",
+      "AccentCity": "Colombier",
+      "Region": 12,
+      "Population": 5133,
+      "Latitude": 46.967085,
+      "Longitude": 6.856603999999999
+   },
+   {
+      "Country": "ch",
+      "City": "conthey",
+      "AccentCity": "Conthey",
+      "Region": 22,
+      "Population": 6747,
+      "Latitude": 46.22528300000001,
+      "Longitude": 7.303714999999999
+   },
+   {
+      "Country": "ch",
+      "City": "crissier",
+      "AccentCity": "Crissier",
+      "Region": 23,
+      "Population": 6915,
+      "Latitude": 46.55165,
+      "Longitude": 6.571253
+   },
+   {
+      "Country": "ch",
+      "City": "delemont",
+      "AccentCity": "Delemont",
+      "Region": 26,
+      "Population": 11567,
+      "Latitude": 47.366429,
+      "Longitude": 7.329005
+   },
+   {
+      "Country": "ch",
+      "City": "derendingen",
+      "AccentCity": "Derendingen",
+      "Region": 18,
+      "Population": 5916,
+      "Latitude": 47.198505,
+      "Longitude": 7.588438000000001
+   },
+   {
+      "Country": "ch",
+      "City": "diepoldsau",
+      "AccentCity": "Diepoldsau",
+      "Region": 15,
+      "Population": 5351,
+      "Latitude": 47.384835,
+      "Longitude": 9.655969
+   },
+   {
+      "Country": "ch",
+      "City": "dietikon",
+      "AccentCity": "Dietikon",
+      "Region": 25,
+      "Population": 22443,
+      "Latitude": 47.404446,
+      "Longitude": 8.394984
+   },
+   {
+      "Country": "ch",
+      "City": "dietlikon",
+      "AccentCity": "Dietlikon",
+      "Region": 25,
+      "Population": 7121,
+      "Latitude": 47.42508400000001,
+      "Longitude": 8.618775
+   },
+   {
+      "Country": "ch",
+      "City": "domat",
+      "AccentCity": "Domat",
+      "Region": 9,
+      "Population": 6818,
+      "Latitude": 46.834827,
+      "Longitude": 9.450752
+   },
+   {
+      "Country": "ch",
+      "City": "dornach",
+      "AccentCity": "Dornach",
+      "Region": 4,
+      "Population": 5940,
+      "Latitude": 47.478042,
+      "Longitude": 7.616417
+   },
+   {
+      "Country": "ch",
+      "City": "dubendorf",
+      "AccentCity": "Dubendorf",
+      "Region": 25,
+      "Population": 23051,
+      "Latitude": 47.395395,
+      "Longitude": 8.618366
+   },
+   {
+      "Country": "ch",
+      "City": "dudingen",
+      "AccentCity": "Dudingen",
+      "Region": 6,
+      "Population": 7088,
+      "Latitude": 46.849152,
+      "Longitude": 7.188475
+   },
+   {
+      "Country": "ch",
+      "City": "durnten",
+      "AccentCity": "Durnten",
+      "Region": 17,
+      "Population": 6225,
+      "Latitude": 47.277691,
+      "Longitude": 8.842176
+   },
+   {
+      "Country": "ch",
+      "City": "ebikon",
+      "AccentCity": "Ebikon",
+      "Region": 11,
+      "Population": 11473,
+      "Latitude": 47.079366,
+      "Longitude": 8.340411
+   },
+   {
+      "Country": "ch",
+      "City": "ebnat-kappel",
+      "AccentCity": "Ebnat-Kappel",
+      "Region": 2,
+      "Population": 4740,
+      "Latitude": 47.261951,
+      "Longitude": 9.124726
+   },
+   {
+      "Country": "ch",
+      "City": "ecublens",
+      "AccentCity": "Ecublens",
+      "Region": 23,
+      "Population": 10655,
+      "Latitude": 46.60915,
+      "Longitude": 6.808706
+   },
+   {
+      "Country": "ch",
+      "City": "egg",
+      "AccentCity": "Egg",
+      "Region": 25,
+      "Population": 8585,
+      "Latitude": 47.300555,
+      "Longitude": 8.687429
+   },
+   {
+      "Country": "ch",
+      "City": "einsiedeln",
+      "AccentCity": "Einsiedeln",
+      "Region": 17,
+      "Population": 13188,
+      "Latitude": 47.126727,
+      "Longitude": 8.745244999999999
+   },
+   {
+      "Country": "ch",
+      "City": "embrach",
+      "AccentCity": "Embrach",
+      "Region": 25,
+      "Population": 8517,
+      "Latitude": 47.507063,
+      "Longitude": 8.595680999999999
+   },
+   {
+      "Country": "ch",
+      "City": "emmen",
+      "AccentCity": "Emmen",
+      "Region": 11,
+      "Population": 27290,
+      "Latitude": 47.081101,
+      "Longitude": 8.30477
+   },
+   {
+      "Country": "ch",
+      "City": "epalinges",
+      "AccentCity": "Epalinges",
+      "Region": 23,
+      "Population": 7521,
+      "Latitude": 46.551775,
+      "Longitude": 6.668288
+   },
+   {
+      "Country": "ch",
+      "City": "eschenbach",
+      "AccentCity": "Eschenbach",
+      "Region": 17,
+      "Population": 5167,
+      "Latitude": 47.239806,
+      "Longitude": 8.921562
+   },
+   {
+      "Country": "ch",
+      "City": "ettingen",
+      "AccentCity": "Ettingen",
+      "Region": 4,
+      "Population": 4917,
+      "Latitude": 47.482675,
+      "Longitude": 7.5498210000000014
+   },
+   {
+      "Country": "ch",
+      "City": "fallanden",
+      "AccentCity": "Fallanden",
+      "Region": 25,
+      "Population": 6987,
+      "Latitude": 47.370719,
+      "Longitude": 8.639834
+   },
+   {
+      "Country": "ch",
+      "City": "flawil",
+      "AccentCity": "Flawil",
+      "Region": 2,
+      "Population": 9878,
+      "Latitude": 47.414611,
+      "Longitude": 9.182838
+   },
+   {
+      "Country": "ch",
+      "City": "flums",
+      "AccentCity": "Flums",
+      "Region": 8,
+      "Population": 4936,
+      "Latitude": 47.092512,
+      "Longitude": 9.342604
+   },
+   {
+      "Country": "ch",
+      "City": "frauenfeld",
+      "AccentCity": "Frauenfeld",
+      "Region": 19,
+      "Population": 22639,
+      "Latitude": 47.558159,
+      "Longitude": 8.898544000000003
+   },
+   {
+      "Country": "ch",
+      "City": "freienbach",
+      "AccentCity": "Freienbach",
+      "Region": 17,
+      "Population": 14900,
+      "Latitude": 47.20407700000001,
+      "Longitude": 8.756933
+   },
+   {
+      "Country": "ch",
+      "City": "frenkendorf",
+      "AccentCity": "Frenkendorf",
+      "Region": 3,
+      "Population": 5984,
+      "Latitude": 47.506858,
+      "Longitude": 7.716483
+   },
+   {
+      "Country": "ch",
+      "City": "fribourg",
+      "AccentCity": "Fribourg",
+      "Region": 6,
+      "Population": 33806,
+      "Latitude": 46.79572,
+      "Longitude": 7.154748
+   },
+   {
+      "Country": "ch",
+      "City": "frutigen",
+      "AccentCity": "Frutigen",
+      "Region": 5,
+      "Population": 6668,
+      "Latitude": 46.58782,
+      "Longitude": 7.64751
+   },
+   {
+      "Country": "ch",
+      "City": "fully",
+      "AccentCity": "Fully",
+      "Region": 22,
+      "Population": 5965,
+      "Latitude": 46.138485,
+      "Longitude": 7.114872
+   },
+   {
+      "Country": "ch",
+      "City": "gelterkinden",
+      "AccentCity": "Gelterkinden",
+      "Region": 1,
+      "Population": 5541,
+      "Latitude": 47.464968,
+      "Longitude": 7.851739999999999
+   },
+   {
+      "Country": "ch",
+      "City": "geneva",
+      "AccentCity": "Geneva",
+      "Region": 7,
+      "Population": 181492,
+      "Latitude": 46.195602,
+      "Longitude": 6.148113
+   },
+   {
+      "Country": "ch",
+      "City": "gerlafingen",
+      "AccentCity": "Gerlafingen",
+      "Region": 18,
+      "Population": 5032,
+      "Latitude": 47.169782,
+      "Longitude": 7.575050999999998
+   },
+   {
+      "Country": "ch",
+      "City": "giubiasco",
+      "AccentCity": "Giubiasco",
+      "Region": 20,
+      "Population": 7926,
+      "Latitude": 46.176481,
+      "Longitude": 9.008847
+   },
+   {
+      "Country": "ch",
+      "City": "gland",
+      "AccentCity": "Gland",
+      "Region": 7,
+      "Population": 11194,
+      "Latitude": 46.421233,
+      "Longitude": 6.266986
+   },
+   {
+      "Country": "ch",
+      "City": "glarus",
+      "AccentCity": "Glarus",
+      "Region": 8,
+      "Population": 5889,
+      "Latitude": 47.04057,
+      "Longitude": 9.068036
+   },
+   {
+      "Country": "ch",
+      "City": "gossau",
+      "AccentCity": "Gossau",
+      "Region": 2,
+      "Population": 17268,
+      "Latitude": 47.41694,
+      "Longitude": 9.251252
+   },
+   {
+      "Country": "ch",
+      "City": "gossau",
+      "AccentCity": "Gossau",
+      "Region": 25,
+      "Population": 9028,
+      "Latitude": 47.306992,
+      "Longitude": 8.757972
+   },
+   {
+      "Country": "ch",
+      "City": "grabs",
+      "AccentCity": "Grabs",
+      "Region": 10,
+      "Population": 6244,
+      "Latitude": 47.182061,
+      "Longitude": 9.443083
+   },
+   {
+      "Country": "ch",
+      "City": "granichen",
+      "AccentCity": "Granichen",
+      "Region": 1,
+      "Population": 6444,
+      "Latitude": 47.359297,
+      "Longitude": 8.10243
+   },
+   {
+      "Country": "ch",
+      "City": "greifensee",
+      "AccentCity": "Greifensee",
+      "Region": 25,
+      "Population": 5080,
+      "Latitude": 47.367869,
+      "Longitude": 8.680017
+   },
+   {
+      "Country": "ch",
+      "City": "grenchen",
+      "AccentCity": "Grenchen",
+      "Region": 18,
+      "Population": 16135,
+      "Latitude": 47.19354000000001,
+      "Longitude": 7.3965770000000015
+   },
+   {
+      "Country": "ch",
+      "City": "heimberg",
+      "AccentCity": "Heimberg",
+      "Region": 5,
+      "Population": 5586,
+      "Latitude": 46.794824,
+      "Longitude": 7.604332
+   },
+   {
+      "Country": "ch",
+      "City": "hergiswil",
+      "AccentCity": "Hergiswil",
+      "Region": 11,
+      "Population": 5477,
+      "Latitude": 46.984209,
+      "Longitude": 8.310356
+   },
+   {
+      "Country": "ch",
+      "City": "herisau",
+      "AccentCity": "Herisau",
+      "Region": 2,
+      "Population": 15444,
+      "Latitude": 47.386276,
+      "Longitude": 9.280779
+   },
+   {
+      "Country": "ch",
+      "City": "herrliberg",
+      "AccentCity": "Herrliberg",
+      "Region": 25,
+      "Population": 5922,
+      "Latitude": 47.288144,
+      "Longitude": 8.612224000000001
+   },
+   {
+      "Country": "ch",
+      "City": "herzogenbuchsee",
+      "AccentCity": "Herzogenbuchsee",
+      "Region": 1,
+      "Population": 5734,
+      "Latitude": 47.187406,
+      "Longitude": 7.707457000000002
+   },
+   {
+      "Country": "ch",
+      "City": "hinwil",
+      "AccentCity": "Hinwil",
+      "Region": 17,
+      "Population": 10533,
+      "Latitude": 47.300822,
+      "Longitude": 8.842075999999997
+   },
+   {
+      "Country": "ch",
+      "City": "hochdorf",
+      "AccentCity": "Hochdorf",
+      "Region": 11,
+      "Population": 7793,
+      "Latitude": 47.168408,
+      "Longitude": 8.291788
+   },
+   {
+      "Country": "ch",
+      "City": "hombrechtikon",
+      "AccentCity": "Hombrechtikon",
+      "Region": 17,
+      "Population": 7795,
+      "Latitude": 47.25208,
+      "Longitude": 8.77437
+   },
+   {
+      "Country": "ch",
+      "City": "horgen",
+      "AccentCity": "Horgen",
+      "Region": 25,
+      "Population": 18055,
+      "Latitude": 47.255924,
+      "Longitude": 8.598672
+   },
+   {
+      "Country": "ch",
+      "City": "horw",
+      "AccentCity": "Horw",
+      "Region": 11,
+      "Population": 12110,
+      "Latitude": 47.016917,
+      "Longitude": 8.309556
+   },
+   {
+      "Country": "ch",
+      "City": "hunenberg",
+      "AccentCity": "Hunenberg",
+      "Region": 24,
+      "Population": 8060,
+      "Latitude": 47.178931,
+      "Longitude": 8.423515
+   },
+   {
+      "Country": "ch",
+      "City": "huttwil",
+      "AccentCity": "Huttwil",
+      "Region": 1,
+      "Population": 4480,
+      "Latitude": 47.11502,
+      "Longitude": 7.862087
+   },
+   {
+      "Country": "ch",
+      "City": "igis",
+      "AccentCity": "Igis",
+      "Region": 9,
+      "Population": 7078,
+      "Latitude": 46.945308,
+      "Longitude": 9.57218
+   },
+   {
+      "Country": "ch",
+      "City": "ingenbohl",
+      "AccentCity": "Ingenbohl",
+      "Region": 17,
+      "Population": 7964,
+      "Latitude": 47.004642,
+      "Longitude": 8.614768
+   },
+   {
+      "Country": "ch",
+      "City": "interlaken",
+      "AccentCity": "Interlaken",
+      "Region": 5,
+      "Population": 5057,
+      "Latitude": 46.683872,
+      "Longitude": 7.866376
+   },
+   {
+      "Country": "ch",
+      "City": "jona",
+      "AccentCity": "Jona",
+      "Region": 17,
+      "Population": 17806,
+      "Latitude": 47.230265,
+      "Longitude": 8.841838000000003
+   },
+   {
+      "Country": "ch",
+      "City": "kerns",
+      "AccentCity": "Kerns",
+      "Region": 14,
+      "Population": 5375,
+      "Latitude": 46.900882,
+      "Longitude": 8.276516
+   },
+   {
+      "Country": "ch",
+      "City": "kilchberg",
+      "AccentCity": "Kilchberg",
+      "Region": 25,
+      "Population": 6918,
+      "Latitude": 47.318309,
+      "Longitude": 8.551172
+   },
+   {
+      "Country": "ch",
+      "City": "kirchberg",
+      "AccentCity": "Kirchberg",
+      "Region": 2,
+      "Population": 8073,
+      "Latitude": 47.411412,
+      "Longitude": 9.039848
+   },
+   {
+      "Country": "ch",
+      "City": "kirchberg",
+      "AccentCity": "Kirchberg",
+      "Region": 18,
+      "Population": 5279,
+      "Latitude": 47.086574,
+      "Longitude": 7.588896000000001
+   },
+   {
+      "Country": "ch",
+      "City": "kloten",
+      "AccentCity": "Kloten",
+      "Region": 25,
+      "Population": 18141,
+      "Latitude": 47.449817,
+      "Longitude": 8.594777
+   },
+   {
+      "Country": "ch",
+      "City": "koniz",
+      "AccentCity": "Koniz",
+      "Region": 5,
+      "Population": 35961,
+      "Latitude": 46.923391,
+      "Longitude": 7.4086880000000015
+   },
+   {
+      "Country": "ch",
+      "City": "konolfingen",
+      "AccentCity": "Konolfingen",
+      "Region": 5,
+      "Population": 4509,
+      "Latitude": 46.879674,
+      "Longitude": 7.622617999999999
+   },
+   {
+      "Country": "ch",
+      "City": "kreuzlingen",
+      "AccentCity": "Kreuzlingen",
+      "Region": 15,
+      "Population": 17233,
+      "Latitude": 47.648212,
+      "Longitude": 9.180338
+   },
+   {
+      "Country": "ch",
+      "City": "kriens",
+      "AccentCity": "Kriens",
+      "Region": 11,
+      "Population": 26117,
+      "Latitude": 47.035366,
+      "Longitude": 8.276307000000001
+   },
+   {
+      "Country": "ch",
+      "City": "kusnacht",
+      "AccentCity": "Kusnacht",
+      "Region": 25,
+      "Population": 13000,
+      "Latitude": 47.31776,
+      "Longitude": 8.581942999999999
+   },
+   {
+      "Country": "ch",
+      "City": "kussnacht",
+      "AccentCity": "Kussnacht",
+      "Region": 11,
+      "Population": 11771,
+      "Latitude": 47.085571,
+      "Longitude": 8.442057
+   },
+   {
+      "Country": "ch",
+      "City": "kuttigen",
+      "AccentCity": "Kuttigen",
+      "Region": 1,
+      "Population": 5092,
+      "Latitude": 47.415658,
+      "Longitude": 8.047673
+   },
+   {
+      "Country": "ch",
+      "City": "la chaux-de-fonds",
+      "AccentCity": "La Chaux-de-Fonds",
+      "Region": 12,
+      "Population": 36971,
+      "Latitude": 47.104417,
+      "Longitude": 6.828892
+   },
+   {
+      "Country": "ch",
+      "City": "lachen",
+      "AccentCity": "Lachen",
+      "Region": 17,
+      "Population": 6879,
+      "Latitude": 47.191524,
+      "Longitude": 8.856195
+   },
+   {
+      "Country": "ch",
+      "City": "langenthal",
+      "AccentCity": "Langenthal",
+      "Region": 1,
+      "Population": 14533,
+      "Latitude": 47.21526,
+      "Longitude": 7.7960720000000014
+   },
+   {
+      "Country": "ch",
+      "City": "langnau",
+      "AccentCity": "Langnau",
+      "Region": 5,
+      "Population": 8731,
+      "Latitude": 46.93936,
+      "Longitude": 7.7873800000000015
+   },
+   {
+      "Country": "ch",
+      "City": "langnau",
+      "AccentCity": "Langnau",
+      "Region": 25,
+      "Population": 6721,
+      "Latitude": 47.285027,
+      "Longitude": 8.534167
+   },
+   {
+      "Country": "ch",
+      "City": "la tour-de-peilz",
+      "AccentCity": "La Tour-de-Peilz",
+      "Region": 23,
+      "Population": 10835,
+      "Latitude": 46.453552,
+      "Longitude": 6.858596
+   },
+   {
+      "Country": "ch",
+      "City": "laufen",
+      "AccentCity": "Laufen",
+      "Region": 4,
+      "Population": 5223,
+      "Latitude": 47.420878,
+      "Longitude": 7.507521
+   },
+   {
+      "Country": "ch",
+      "City": "lausanne",
+      "AccentCity": "Lausanne",
+      "Region": 23,
+      "Population": 118015,
+      "Latitude": 46.533333,
+      "Longitude": 6.666667
+   },
+   {
+      "Country": "ch",
+      "City": "lausen",
+      "AccentCity": "Lausen",
+      "Region": 3,
+      "Population": 5043,
+      "Latitude": 47.475823,
+      "Longitude": 7.765687
+   },
+   {
+      "Country": "ch",
+      "City": "le grand-saconnex",
+      "AccentCity": "Le Grand-Saconnex",
+      "Region": 7,
+      "Population": 8457,
+      "Latitude": 46.226419,
+      "Longitude": 6.123303
+   },
+   {
+      "Country": "ch",
+      "City": "le locle",
+      "AccentCity": "Le Locle",
+      "Region": 12,
+      "Population": 9933,
+      "Latitude": 47.059533,
+      "Longitude": 6.752278
+   },
+   {
+      "Country": "ch",
+      "City": "le mont-sur-lausanne",
+      "AccentCity": "Le Mont-sur-Lausanne",
+      "Region": 23,
+      "Population": 5139,
+      "Latitude": 46.557743,
+      "Longitude": 6.634562
+   },
+   {
+      "Country": "ch",
+      "City": "lengnau",
+      "AccentCity": "Lengnau",
+      "Region": 5,
+      "Population": 4302,
+      "Latitude": 47.183824,
+      "Longitude": 7.373714
+   },
+   {
+      "Country": "ch",
+      "City": "lenzburg",
+      "AccentCity": "Lenzburg",
+      "Region": 1,
+      "Population": 7616,
+      "Latitude": 47.384048,
+      "Longitude": 8.181797999999999
+   },
+   {
+      "Country": "ch",
+      "City": "liestal",
+      "AccentCity": "Liestal",
+      "Region": 3,
+      "Population": 12491,
+      "Latitude": 47.482779,
+      "Longitude": 7.742975
+   },
+   {
+      "Country": "ch",
+      "City": "littau",
+      "AccentCity": "Littau",
+      "Region": 11,
+      "Population": 16403,
+      "Latitude": 47.050004,
+      "Longitude": 8.262739
+   },
+   {
+      "Country": "ch",
+      "City": "locarno",
+      "AccentCity": "Locarno",
+      "Region": 20,
+      "Population": 13998,
+      "Latitude": 46.16497,
+      "Longitude": 8.799253
+   },
+   {
+      "Country": "ch",
+      "City": "losone",
+      "AccentCity": "Losone",
+      "Region": 20,
+      "Population": 6060,
+      "Latitude": 46.133333,
+      "Longitude": 8.75
+   },
+   {
+      "Country": "ch",
+      "City": "lugano",
+      "AccentCity": "Lugano",
+      "Region": 20,
+      "Population": 26327,
+      "Latitude": 46.006182,
+      "Longitude": 8.951141999999997
+   },
+   {
+      "Country": "ch",
+      "City": "lutry",
+      "AccentCity": "Lutry",
+      "Region": 23,
+      "Population": 8625,
+      "Latitude": 46.504873,
+      "Longitude": 6.685161
+   },
+   {
+      "Country": "ch",
+      "City": "luzern",
+      "AccentCity": "Luzern",
+      "Region": 11,
+      "Population": 57269,
+      "Latitude": 47.083333,
+      "Longitude": 8.266667
+   },
+   {
+      "Country": "ch",
+      "City": "lyss",
+      "AccentCity": "Lyss",
+      "Region": 5,
+      "Population": 10892,
+      "Latitude": 47.077573,
+      "Longitude": 7.31162
+   },
+   {
+      "Country": "ch",
+      "City": "malters",
+      "AccentCity": "Malters",
+      "Region": 11,
+      "Population": 6303,
+      "Latitude": 47.03628,
+      "Longitude": 8.181928
+   },
+   {
+      "Country": "ch",
+      "City": "mannedorf",
+      "AccentCity": "Mannedorf",
+      "Region": 25,
+      "Population": 10164,
+      "Latitude": 47.252851,
+      "Longitude": 8.690581
+   },
+   {
+      "Country": "ch",
+      "City": "martigny",
+      "AccentCity": "Martigny",
+      "Region": 22,
+      "Population": 14413,
+      "Latitude": 46.104593,
+      "Longitude": 7.076771000000001
+   },
+   {
+      "Country": "ch",
+      "City": "massagno",
+      "AccentCity": "Massagno",
+      "Region": 20,
+      "Population": 5918,
+      "Latitude": 46.015621,
+      "Longitude": 8.945343
+   },
+   {
+      "Country": "ch",
+      "City": "maur",
+      "AccentCity": "Maur",
+      "Region": 25,
+      "Population": 9577,
+      "Latitude": 47.339262,
+      "Longitude": 8.671352
+   },
+   {
+      "Country": "ch",
+      "City": "meggen",
+      "AccentCity": "Meggen",
+      "Region": 11,
+      "Population": 6593,
+      "Latitude": 47.04722,
+      "Longitude": 8.369489
+   },
+   {
+      "Country": "ch",
+      "City": "meilen",
+      "AccentCity": "Meilen",
+      "Region": 25,
+      "Population": 11723,
+      "Latitude": 47.270429,
+      "Longitude": 8.643675
+   },
+   {
+      "Country": "ch",
+      "City": "meiringen",
+      "AccentCity": "Meiringen",
+      "Region": 14,
+      "Population": 4708,
+      "Latitude": 46.726776,
+      "Longitude": 8.183961
+   },
+   {
+      "Country": "ch",
+      "City": "mendrisio",
+      "AccentCity": "Mendrisio",
+      "Region": 20,
+      "Population": 6192,
+      "Latitude": 45.86741,
+      "Longitude": 8.982097
+   },
+   {
+      "Country": "ch",
+      "City": "menziken",
+      "AccentCity": "Menziken",
+      "Region": 1,
+      "Population": 5645,
+      "Latitude": 47.242487,
+      "Longitude": 8.19047
+   },
+   {
+      "Country": "ch",
+      "City": "meyrin",
+      "AccentCity": "Meyrin",
+      "Region": 7,
+      "Population": 19691,
+      "Latitude": 46.228245,
+      "Longitude": 6.064189
+   },
+   {
+      "Country": "ch",
+      "City": "minusio",
+      "AccentCity": "Minusio",
+      "Region": 20,
+      "Population": 6772,
+      "Latitude": 46.175242,
+      "Longitude": 8.820102
+   },
+   {
+      "Country": "ch",
+      "City": "mohlin",
+      "AccentCity": "Mohlin",
+      "Region": 1,
+      "Population": 8353,
+      "Latitude": 47.556412,
+      "Longitude": 7.846872999999999
+   },
+   {
+      "Country": "ch",
+      "City": "monthey",
+      "AccentCity": "Monthey",
+      "Region": 23,
+      "Population": 16002,
+      "Latitude": 46.255457,
+      "Longitude": 6.960665
+   },
+   {
+      "Country": "ch",
+      "City": "montreux",
+      "AccentCity": "Montreux",
+      "Region": 23,
+      "Population": 23703,
+      "Latitude": 46.433715,
+      "Longitude": 6.913179
+   },
+   {
+      "Country": "ch",
+      "City": "morges",
+      "AccentCity": "Morges",
+      "Region": 23,
+      "Population": 13759,
+      "Latitude": 46.511255,
+      "Longitude": 6.495693
+   },
+   {
+      "Country": "ch",
+      "City": "moutier",
+      "AccentCity": "Moutier",
+      "Region": 26,
+      "Population": 7476,
+      "Latitude": 47.27773300000001,
+      "Longitude": 7.369712
+   },
+   {
+      "Country": "ch",
+      "City": "munchenbuchsee",
+      "AccentCity": "Munchenbuchsee",
+      "Region": 5,
+      "Population": 10774,
+      "Latitude": 47.020946,
+      "Longitude": 7.448956
+   },
+   {
+      "Country": "ch",
+      "City": "munchenstein",
+      "AccentCity": "Munchenstein",
+      "Region": 4,
+      "Population": 12059,
+      "Latitude": 47.510513,
+      "Longitude": 7.617667999999999
+   },
+   {
+      "Country": "ch",
+      "City": "munsingen",
+      "AccentCity": "Munsingen",
+      "Region": 5,
+      "Population": 11326,
+      "Latitude": 46.87309000000001,
+      "Longitude": 7.568647
+   },
+   {
+      "Country": "ch",
+      "City": "muri",
+      "AccentCity": "Muri",
+      "Region": 1,
+      "Population": 6307,
+      "Latitude": 47.270428,
+      "Longitude": 8.3382
+   },
+   {
+      "Country": "ch",
+      "City": "muri",
+      "AccentCity": "Muri",
+      "Region": 5,
+      "Population": 12280,
+      "Latitude": 46.931714,
+      "Longitude": 7.494164
+   },
+   {
+      "Country": "ch",
+      "City": "murten",
+      "AccentCity": "Murten",
+      "Region": 6,
+      "Population": 5377,
+      "Latitude": 46.92684000000001,
+      "Longitude": 7.1103429999999985
+   },
+   {
+      "Country": "ch",
+      "City": "muttenz",
+      "AccentCity": "Muttenz",
+      "Region": 3,
+      "Population": 16646,
+      "Latitude": 47.52525900000001,
+      "Longitude": 7.644511
+   },
+   {
+      "Country": "ch",
+      "City": "naters",
+      "AccentCity": "Naters",
+      "Region": 22,
+      "Population": 7472,
+      "Latitude": 46.32448,
+      "Longitude": 7.99137
+   },
+   {
+      "Country": "ch",
+      "City": "nendaz",
+      "AccentCity": "Nendaz",
+      "Region": 22,
+      "Population": 5477,
+      "Latitude": 46.191142,
+      "Longitude": 7.311152000000001
+   },
+   {
+      "Country": "ch",
+      "City": "neuchatel",
+      "AccentCity": "Neuchatel",
+      "Region": 12,
+      "Population": 31216,
+      "Latitude": 46.99308900000001,
+      "Longitude": 6.93005
+   },
+   {
+      "Country": "ch",
+      "City": "neuenhof",
+      "AccentCity": "Neuenhof",
+      "Region": 1,
+      "Population": 7358,
+      "Latitude": 47.452596,
+      "Longitude": 8.325772
+   },
+   {
+      "Country": "ch",
+      "City": "neuenkirch",
+      "AccentCity": "Neuenkirch",
+      "Region": 11,
+      "Population": 5683,
+      "Latitude": 47.099891,
+      "Longitude": 8.204161000000001
+   },
+   {
+      "Country": "ch",
+      "City": "nidau",
+      "AccentCity": "Nidau",
+      "Region": 5,
+      "Population": 6932,
+      "Latitude": 47.129167,
+      "Longitude": 7.238464
+   },
+   {
+      "Country": "ch",
+      "City": "nyon",
+      "AccentCity": "Nyon",
+      "Region": 7,
+      "Population": 17071,
+      "Latitude": 46.388848,
+      "Longitude": 6.239319
+   },
+   {
+      "Country": "ch",
+      "City": "oberengstringen",
+      "AccentCity": "Oberengstringen",
+      "Region": 25,
+      "Population": 6106,
+      "Latitude": 47.410151,
+      "Longitude": 8.460977999999999
+   },
+   {
+      "Country": "ch",
+      "City": "oberentfelden",
+      "AccentCity": "Oberentfelden",
+      "Region": 1,
+      "Population": 6981,
+      "Latitude": 47.360291,
+      "Longitude": 8.039193
+   },
+   {
+      "Country": "ch",
+      "City": "oberglatt",
+      "AccentCity": "Oberglatt",
+      "Region": 1,
+      "Population": 5346,
+      "Latitude": 47.475281,
+      "Longitude": 8.520368
+   },
+   {
+      "Country": "ch",
+      "City": "oberriet",
+      "AccentCity": "Oberriet",
+      "Region": 10,
+      "Population": 7717,
+      "Latitude": 47.319883,
+      "Longitude": 9.566079
+   },
+   {
+      "Country": "ch",
+      "City": "obersiggenthal",
+      "AccentCity": "Obersiggenthal",
+      "Region": 1,
+      "Population": 7683,
+      "Latitude": 47.489554,
+      "Longitude": 8.290436999999999
+   },
+   {
+      "Country": "ch",
+      "City": "oberuzwil",
+      "AccentCity": "Oberuzwil",
+      "Region": 2,
+      "Population": 5600,
+      "Latitude": 47.430722,
+      "Longitude": 9.124194
+   },
+   {
+      "Country": "ch",
+      "City": "oberwil",
+      "AccentCity": "Oberwil",
+      "Region": 4,
+      "Population": 9957,
+      "Latitude": 47.508519,
+      "Longitude": 7.555238
+   },
+   {
+      "Country": "ch",
+      "City": "oftringen",
+      "AccentCity": "Oftringen",
+      "Region": 1,
+      "Population": 10062,
+      "Latitude": 47.31382,
+      "Longitude": 7.925327
+   },
+   {
+      "Country": "ch",
+      "City": "ollon",
+      "AccentCity": "Ollon",
+      "Region": 23,
+      "Population": 6494,
+      "Latitude": 46.297564,
+      "Longitude": 6.99499
+   },
+   {
+      "Country": "ch",
+      "City": "olten",
+      "AccentCity": "Olten",
+      "Region": 1,
+      "Population": 16555,
+      "Latitude": 47.357058,
+      "Longitude": 7.909101
+   },
+   {
+      "Country": "ch",
+      "City": "onex",
+      "AccentCity": "Onex",
+      "Region": 7,
+      "Population": 16796,
+      "Latitude": 46.183909,
+      "Longitude": 6.1018089999999985
+   },
+   {
+      "Country": "ch",
+      "City": "opfikon",
+      "AccentCity": "Opfikon",
+      "Region": 25,
+      "Population": 13395,
+      "Latitude": 47.43255300000001,
+      "Longitude": 8.580231
+   },
+   {
+      "Country": "ch",
+      "City": "orbe",
+      "AccentCity": "Orbe",
+      "Region": 23,
+      "Population": 5466,
+      "Latitude": 46.724717,
+      "Longitude": 6.530103
+   },
+   {
+      "Country": "ch",
+      "City": "payerne",
+      "AccentCity": "Payerne",
+      "Region": 6,
+      "Population": 7758,
+      "Latitude": 46.82201,
+      "Longitude": 6.9360800000000005
+   },
+   {
+      "Country": "ch",
+      "City": "peseux",
+      "AccentCity": "Peseux",
+      "Region": 12,
+      "Population": 5580,
+      "Latitude": 46.982998,
+      "Longitude": 6.881593
+   },
+   {
+      "Country": "ch",
+      "City": "pfaffikon",
+      "AccentCity": "Pfaffikon",
+      "Region": 25,
+      "Population": 9987,
+      "Latitude": 47.364528,
+      "Longitude": 8.78395
+   },
+   {
+      "Country": "ch",
+      "City": "plan-les-ouates",
+      "AccentCity": "Plan-les-Ouates",
+      "Region": 7,
+      "Population": 8135,
+      "Latitude": 46.16761500000001,
+      "Longitude": 6.119125
+   },
+   {
+      "Country": "ch",
+      "City": "porrentruy",
+      "AccentCity": "Porrentruy",
+      "Region": 26,
+      "Population": 6453,
+      "Latitude": 47.41532700000001,
+      "Longitude": 7.075221000000001
+   },
+   {
+      "Country": "ch",
+      "City": "pratteln",
+      "AccentCity": "Pratteln",
+      "Region": 3,
+      "Population": 14861,
+      "Latitude": 47.52118,
+      "Longitude": 7.688414999999999
+   },
+   {
+      "Country": "ch",
+      "City": "pregassona",
+      "AccentCity": "Pregassona",
+      "Region": 20,
+      "Population": 7491,
+      "Latitude": 46.02142,
+      "Longitude": 8.969476
+   },
+   {
+      "Country": "ch",
+      "City": "prilly",
+      "AccentCity": "Prilly",
+      "Region": 23,
+      "Population": 10774,
+      "Latitude": 46.52244500000001,
+      "Longitude": 6.622151
+   },
+   {
+      "Country": "ch",
+      "City": "pully",
+      "AccentCity": "Pully",
+      "Region": 23,
+      "Population": 16640,
+      "Latitude": 46.510544,
+      "Longitude": 6.656071000000002
+   },
+   {
+      "Country": "ch",
+      "City": "rapperswil",
+      "AccentCity": "Rapperswil",
+      "Region": 17,
+      "Population": 7959,
+      "Latitude": 47.227986,
+      "Longitude": 8.825954
+   },
+   {
+      "Country": "ch",
+      "City": "regensdorf",
+      "AccentCity": "Regensdorf",
+      "Region": 25,
+      "Population": 15756,
+      "Latitude": 47.429855,
+      "Longitude": 8.465128
+   },
+   {
+      "Country": "ch",
+      "City": "reinach",
+      "AccentCity": "Reinach",
+      "Region": 1,
+      "Population": 7756,
+      "Latitude": 47.259435,
+      "Longitude": 8.188452999999999
+   },
+   {
+      "Country": "ch",
+      "City": "renens",
+      "AccentCity": "Renens",
+      "Region": 23,
+      "Population": 17530,
+      "Latitude": 46.539894,
+      "Longitude": 6.588096000000001
+   },
+   {
+      "Country": "ch",
+      "City": "rheinfelden",
+      "AccentCity": "Rheinfelden",
+      "Region": 1,
+      "Population": 10657,
+      "Latitude": 47.562979,
+      "Longitude": 7.780108
+   },
+   {
+      "Country": "ch",
+      "City": "richterswil",
+      "AccentCity": "Richterswil",
+      "Region": 17,
+      "Population": 11398,
+      "Latitude": 47.207416,
+      "Longitude": 8.705841
+   },
+   {
+      "Country": "ch",
+      "City": "risch",
+      "AccentCity": "Risch",
+      "Region": 22,
+      "Population": 8645,
+      "Latitude": 46.409984,
+      "Longitude": 7.338869
+   },
+   {
+      "Country": "ch",
+      "City": "romanshorn",
+      "AccentCity": "Romanshorn",
+      "Region": 15,
+      "Population": 9060,
+      "Latitude": 47.565858,
+      "Longitude": 9.378694
+   },
+   {
+      "Country": "ch",
+      "City": "rothrist",
+      "AccentCity": "Rothrist",
+      "Region": 1,
+      "Population": 7141,
+      "Latitude": 47.305162,
+      "Longitude": 7.8909449999999985
+   },
+   {
+      "Country": "ch",
+      "City": "rumlang",
+      "AccentCity": "Rumlang",
+      "Region": 25,
+      "Population": 6304,
+      "Latitude": 47.451787,
+      "Longitude": 8.526777000000001
+   },
+   {
+      "Country": "ch",
+      "City": "ruschlikon",
+      "AccentCity": "Ruschlikon",
+      "Region": 25,
+      "Population": 5246,
+      "Latitude": 47.307744,
+      "Longitude": 8.555743
+   },
+   {
+      "Country": "ch",
+      "City": "ruswil",
+      "AccentCity": "Ruswil",
+      "Region": 11,
+      "Population": 6441,
+      "Latitude": 47.084253,
+      "Longitude": 8.126446000000001
+   },
+   {
+      "Country": "ch",
+      "City": "ruti",
+      "AccentCity": "Ruti",
+      "Region": 17,
+      "Population": 11361,
+      "Latitude": 47.261507,
+      "Longitude": 8.852445
+   },
+   {
+      "Country": "ch",
+      "City": "saanen",
+      "AccentCity": "Saanen",
+      "Region": 22,
+      "Population": 6644,
+      "Latitude": 46.489557,
+      "Longitude": 7.259608999999998
+   },
+   {
+      "Country": "ch",
+      "City": "saint-imier",
+      "AccentCity": "Saint-Imier",
+      "Region": 12,
+      "Population": 4701,
+      "Latitude": 47.152195,
+      "Longitude": 6.9951240000000015
+   },
+   {
+      "Country": "ch",
+      "City": "sankt margrethen",
+      "AccentCity": "Sankt Margrethen",
+      "Region": 15,
+      "Population": 4995,
+      "Latitude": 47.442304,
+      "Longitude": 9.629598
+   },
+   {
+      "Country": "ch",
+      "City": "sargans",
+      "AccentCity": "Sargans",
+      "Region": 9,
+      "Population": 4991,
+      "Latitude": 47.04842100000001,
+      "Longitude": 9.444797
+   },
+   {
+      "Country": "ch",
+      "City": "sarnen",
+      "AccentCity": "Sarnen",
+      "Region": 14,
+      "Population": 9405,
+      "Latitude": 46.898509,
+      "Longitude": 8.250681
+   },
+   {
+      "Country": "ch",
+      "City": "saviese",
+      "AccentCity": "Saviese",
+      "Region": 22,
+      "Population": 5653,
+      "Latitude": 46.251153,
+      "Longitude": 7.345578
+   },
+   {
+      "Country": "ch",
+      "City": "schaffhausen",
+      "AccentCity": "Schaffhausen",
+      "Region": 16,
+      "Population": 34445,
+      "Latitude": 47.697316,
+      "Longitude": 8.634929
+   },
+   {
+      "Country": "ch",
+      "City": "schattdorf",
+      "AccentCity": "Schattdorf",
+      "Region": 21,
+      "Population": 4779,
+      "Latitude": 46.865501,
+      "Longitude": 8.654655
+   },
+   {
+      "Country": "ch",
+      "City": "schlieren",
+      "AccentCity": "Schlieren",
+      "Region": 25,
+      "Population": 13762,
+      "Latitude": 47.39646,
+      "Longitude": 8.448587
+   },
+   {
+      "Country": "ch",
+      "City": "schonenwerd",
+      "AccentCity": "Schonenwerd",
+      "Region": 1,
+      "Population": 4470,
+      "Latitude": 47.3691,
+      "Longitude": 8.001674000000001
+   },
+   {
+      "Country": "ch",
+      "City": "schubelbach",
+      "AccentCity": "Schubelbach",
+      "Region": 17,
+      "Population": 8292,
+      "Latitude": 47.173785,
+      "Longitude": 8.927866999999997
+   },
+   {
+      "Country": "ch",
+      "City": "schwyz",
+      "AccentCity": "Schwyz",
+      "Region": 17,
+      "Population": 14425,
+      "Latitude": 47.027858,
+      "Longitude": 8.656112
+   },
+   {
+      "Country": "ch",
+      "City": "seon",
+      "AccentCity": "Seon",
+      "Region": 1,
+      "Population": 4556,
+      "Latitude": 47.3449,
+      "Longitude": 8.156071
+   },
+   {
+      "Country": "ch",
+      "City": "seuzach",
+      "AccentCity": "Seuzach",
+      "Region": 25,
+      "Population": 7061,
+      "Latitude": 47.536974,
+      "Longitude": 8.731667999999999
+   },
+   {
+      "Country": "ch",
+      "City": "sevelen",
+      "AccentCity": "Sevelen",
+      "Region": 10,
+      "Population": 4450,
+      "Latitude": 47.122292,
+      "Longitude": 9.489926
+   },
+   {
+      "Country": "ch",
+      "City": "sierre",
+      "AccentCity": "Sierre",
+      "Region": 22,
+      "Population": 14648,
+      "Latitude": 46.293235,
+      "Longitude": 7.536934
+   },
+   {
+      "Country": "ch",
+      "City": "sion",
+      "AccentCity": "Sion",
+      "Region": 22,
+      "Population": 28246,
+      "Latitude": 46.229076,
+      "Longitude": 7.359417
+   },
+   {
+      "Country": "ch",
+      "City": "sirnach",
+      "AccentCity": "Sirnach",
+      "Region": 19,
+      "Population": 6658,
+      "Latitude": 47.463275,
+      "Longitude": 8.990668
+   },
+   {
+      "Country": "ch",
+      "City": "sissach",
+      "AccentCity": "Sissach",
+      "Region": 3,
+      "Population": 5680,
+      "Latitude": 47.467368,
+      "Longitude": 7.799596000000001
+   },
+   {
+      "Country": "ch",
+      "City": "solothurn",
+      "AccentCity": "Solothurn",
+      "Region": 18,
+      "Population": 15292,
+      "Latitude": 47.206649,
+      "Longitude": 7.516605
+   },
+   {
+      "Country": "ch",
+      "City": "spiez",
+      "AccentCity": "Spiez",
+      "Region": 5,
+      "Population": 12310,
+      "Latitude": 46.684733,
+      "Longitude": 7.691108
+   },
+   {
+      "Country": "ch",
+      "City": "spreitenbach",
+      "AccentCity": "Spreitenbach",
+      "Region": 1,
+      "Population": 10544,
+      "Latitude": 47.42015900000001,
+      "Longitude": 8.363006
+   },
+   {
+      "Country": "ch",
+      "City": "stafa",
+      "AccentCity": "Stafa",
+      "Region": 17,
+      "Population": 13040,
+      "Latitude": 47.23905900000001,
+      "Longitude": 8.725646000000001
+   },
+   {
+      "Country": "ch",
+      "City": "stans",
+      "AccentCity": "Stans",
+      "Region": 13,
+      "Population": 7620,
+      "Latitude": 46.958449,
+      "Longitude": 8.365995
+   },
+   {
+      "Country": "ch",
+      "City": "steffisburg",
+      "AccentCity": "Steffisburg",
+      "Region": 5,
+      "Population": 15396,
+      "Latitude": 46.778074,
+      "Longitude": 7.63249
+   },
+   {
+      "Country": "ch",
+      "City": "steinhausen",
+      "AccentCity": "Steinhausen",
+      "Region": 24,
+      "Population": 8640,
+      "Latitude": 47.195101,
+      "Longitude": 8.485809
+   },
+   {
+      "Country": "ch",
+      "City": "suhr",
+      "AccentCity": "Suhr",
+      "Region": 1,
+      "Population": 9522,
+      "Latitude": 47.371725,
+      "Longitude": 8.079669
+   },
+   {
+      "Country": "ch",
+      "City": "sulgen",
+      "AccentCity": "Sulgen",
+      "Region": 15,
+      "Population": 3081,
+      "Latitude": 47.5377,
+      "Longitude": 9.18497
+   },
+   {
+      "Country": "ch",
+      "City": "sumiswald",
+      "AccentCity": "Sumiswald",
+      "Region": 1,
+      "Population": 5072,
+      "Latitude": 47.027467,
+      "Longitude": 7.745257
+   },
+   {
+      "Country": "ch",
+      "City": "sursee",
+      "AccentCity": "Sursee",
+      "Region": 1,
+      "Population": 7962,
+      "Latitude": 47.170881,
+      "Longitude": 8.111132000000001
+   },
+   {
+      "Country": "ch",
+      "City": "teufen",
+      "AccentCity": "Teufen",
+      "Region": 15,
+      "Population": 5621,
+      "Latitude": 47.390723,
+      "Longitude": 9.389564
+   },
+   {
+      "Country": "ch",
+      "City": "thalwil",
+      "AccentCity": "Thalwil",
+      "Region": 25,
+      "Population": 16389,
+      "Latitude": 47.289515,
+      "Longitude": 8.567546
+   },
+   {
+      "Country": "ch",
+      "City": "therwil",
+      "AccentCity": "Therwil",
+      "Region": 4,
+      "Population": 8986,
+      "Latitude": 47.501166,
+      "Longitude": 7.552859
+   },
+   {
+      "Country": "ch",
+      "City": "thonex",
+      "AccentCity": "Thonex",
+      "Region": 7,
+      "Population": 13018,
+      "Latitude": 46.188186,
+      "Longitude": 6.196893
+   },
+   {
+      "Country": "ch",
+      "City": "thun",
+      "AccentCity": "Thun",
+      "Region": 5,
+      "Population": 41539,
+      "Latitude": 46.751176,
+      "Longitude": 7.621663000000002
+   },
+   {
+      "Country": "ch",
+      "City": "trimbach",
+      "AccentCity": "Trimbach",
+      "Region": 1,
+      "Population": 6127,
+      "Latitude": 47.365605,
+      "Longitude": 7.886797
+   },
+   {
+      "Country": "ch",
+      "City": "uetendorf",
+      "AccentCity": "Uetendorf",
+      "Region": 5,
+      "Population": 5538,
+      "Latitude": 46.773917,
+      "Longitude": 7.572506
+   },
+   {
+      "Country": "ch",
+      "City": "unterageri",
+      "AccentCity": "Unterageri",
+      "Region": 24,
+      "Population": 7248,
+      "Latitude": 47.136445,
+      "Longitude": 8.585305
+   },
+   {
+      "Country": "ch",
+      "City": "unterseen",
+      "AccentCity": "Unterseen",
+      "Region": 5,
+      "Population": 5283,
+      "Latitude": 46.6853,
+      "Longitude": 7.847225
+   },
+   {
+      "Country": "ch",
+      "City": "untersiggenthal",
+      "AccentCity": "Untersiggenthal",
+      "Region": 1,
+      "Population": 6551,
+      "Latitude": 47.503174,
+      "Longitude": 8.254838000000001
+   },
+   {
+      "Country": "ch",
+      "City": "urdorf",
+      "AccentCity": "Urdorf",
+      "Region": 25,
+      "Population": 9247,
+      "Latitude": 47.382958,
+      "Longitude": 8.428597
+   },
+   {
+      "Country": "ch",
+      "City": "urtenen",
+      "AccentCity": "Urtenen",
+      "Region": 5,
+      "Population": 5255,
+      "Latitude": 47.026668,
+      "Longitude": 7.500814
+   },
+   {
+      "Country": "ch",
+      "City": "uster",
+      "AccentCity": "Uster",
+      "Region": 25,
+      "Population": 29583,
+      "Latitude": 47.351997,
+      "Longitude": 8.713687
+   },
+   {
+      "Country": "ch",
+      "City": "uznach",
+      "AccentCity": "Uznach",
+      "Region": 17,
+      "Population": 5648,
+      "Latitude": 47.224209,
+      "Longitude": 8.982634
+   },
+   {
+      "Country": "ch",
+      "City": "uzwil",
+      "AccentCity": "Uzwil",
+      "Region": 2,
+      "Population": 12185,
+      "Latitude": 47.43813400000001,
+      "Longitude": 9.139218
+   },
+   {
+      "Country": "ch",
+      "City": "vernier",
+      "AccentCity": "Vernier",
+      "Region": 7,
+      "Population": 29767,
+      "Latitude": 46.217693,
+      "Longitude": 6.08511
+   },
+   {
+      "Country": "ch",
+      "City": "versoix",
+      "AccentCity": "Versoix",
+      "Region": 7,
+      "Population": 11660,
+      "Latitude": 46.284017,
+      "Longitude": 6.161658999999998
+   },
+   {
+      "Country": "ch",
+      "City": "vevey",
+      "AccentCity": "Vevey",
+      "Region": 23,
+      "Population": 16014,
+      "Latitude": 46.46526400000001,
+      "Longitude": 6.841168
+   },
+   {
+      "Country": "ch",
+      "City": "veyrier",
+      "AccentCity": "Veyrier",
+      "Region": 7,
+      "Population": 9375,
+      "Latitude": 46.166485,
+      "Longitude": 6.185442
+   },
+   {
+      "Country": "ch",
+      "City": "viganello",
+      "AccentCity": "Viganello",
+      "Region": 20,
+      "Population": 6330,
+      "Latitude": 46.015037,
+      "Longitude": 8.967779
+   },
+   {
+      "Country": "ch",
+      "City": "villars-sur-glane",
+      "AccentCity": "Villars-sur-Glane",
+      "Region": 6,
+      "Population": 9379,
+      "Latitude": 46.791892,
+      "Longitude": 7.117215
+   },
+   {
+      "Country": "ch",
+      "City": "villmergen",
+      "AccentCity": "Villmergen",
+      "Region": 1,
+      "Population": 5244,
+      "Latitude": 47.349173,
+      "Longitude": 8.245828
+   },
+   {
+      "Country": "ch",
+      "City": "visp",
+      "AccentCity": "Visp",
+      "Region": 22,
+      "Population": 6560,
+      "Latitude": 46.294524,
+      "Longitude": 7.884736
+   },
+   {
+      "Country": "ch",
+      "City": "volketswil",
+      "AccentCity": "Volketswil",
+      "Region": 25,
+      "Population": 14592,
+      "Latitude": 47.389983,
+      "Longitude": 8.691548
+   },
+   {
+      "Country": "ch",
+      "City": "wadenswil",
+      "AccentCity": "Wadenswil",
+      "Region": 17,
+      "Population": 19473,
+      "Latitude": 47.228726,
+      "Longitude": 8.670585
+   },
+   {
+      "Country": "ch",
+      "City": "wahlern",
+      "AccentCity": "Wahlern",
+      "Region": 5,
+      "Population": 6292,
+      "Latitude": 46.828062,
+      "Longitude": 7.353178
+   },
+   {
+      "Country": "ch",
+      "City": "wald",
+      "AccentCity": "Wald",
+      "Region": 17,
+      "Population": 9016,
+      "Latitude": 47.276331,
+      "Longitude": 8.914128
+   },
+   {
+      "Country": "ch",
+      "City": "wallisellen",
+      "AccentCity": "Wallisellen",
+      "Region": 25,
+      "Population": 12820,
+      "Latitude": 47.418328,
+      "Longitude": 8.589816
+   },
+   {
+      "Country": "ch",
+      "City": "wattwil",
+      "AccentCity": "Wattwil",
+      "Region": 2,
+      "Population": 8129,
+      "Latitude": 47.302253,
+      "Longitude": 9.08757
+   },
+   {
+      "Country": "ch",
+      "City": "weinfelden",
+      "AccentCity": "Weinfelden",
+      "Region": 19,
+      "Population": 9529,
+      "Latitude": 47.566194,
+      "Longitude": 9.107546
+   },
+   {
+      "Country": "ch",
+      "City": "wettingen",
+      "AccentCity": "Wettingen",
+      "Region": 1,
+      "Population": 18509,
+      "Latitude": 47.470495,
+      "Longitude": 8.316360000000001
+   },
+   {
+      "Country": "ch",
+      "City": "wetzikon",
+      "AccentCity": "Wetzikon",
+      "Region": 25,
+      "Population": 19377,
+      "Latitude": 47.325771,
+      "Longitude": 8.795716
+   },
+   {
+      "Country": "ch",
+      "City": "wil",
+      "AccentCity": "Wil",
+      "Region": 19,
+      "Population": 17234,
+      "Latitude": 47.462147,
+      "Longitude": 9.04289
+   },
+   {
+      "Country": "ch",
+      "City": "windisch",
+      "AccentCity": "Windisch",
+      "Region": 1,
+      "Population": 6815,
+      "Latitude": 47.476756,
+      "Longitude": 8.220846
+   },
+   {
+      "Country": "ch",
+      "City": "winterthur",
+      "AccentCity": "Winterthur",
+      "Region": 25,
+      "Population": 91368,
+      "Latitude": 47.500035,
+      "Longitude": 8.7251
+   },
+   {
+      "Country": "ch",
+      "City": "wittenbach",
+      "AccentCity": "Wittenbach",
+      "Region": 15,
+      "Population": 8283,
+      "Latitude": 47.463075,
+      "Longitude": 9.37761
+   },
+   {
+      "Country": "ch",
+      "City": "wohlen",
+      "AccentCity": "Wohlen",
+      "Region": 1,
+      "Population": 14163,
+      "Latitude": 47.352359,
+      "Longitude": 8.278768
+   },
+   {
+      "Country": "ch",
+      "City": "wohlen",
+      "AccentCity": "Wohlen",
+      "Region": 5,
+      "Population": 9310,
+      "Latitude": 46.972336,
+      "Longitude": 7.358492999999998
+   },
+   {
+      "Country": "ch",
+      "City": "wollerau",
+      "AccentCity": "Wollerau",
+      "Region": 17,
+      "Population": 6891,
+      "Latitude": 47.19478,
+      "Longitude": 8.719028999999999
+   },
+   {
+      "Country": "ch",
+      "City": "worb",
+      "AccentCity": "Worb",
+      "Region": 5,
+      "Population": 11586,
+      "Latitude": 46.930286,
+      "Longitude": 7.562099000000001
+   },
+   {
+      "Country": "ch",
+      "City": "yverdon",
+      "AccentCity": "Yverdon",
+      "Region": 23,
+      "Population": 23756,
+      "Latitude": 46.777908,
+      "Longitude": 6.635502000000002
+   },
+   {
+      "Country": "ch",
+      "City": "zermatt",
+      "AccentCity": "Zermatt",
+      "Region": 22,
+      "Population": 5607,
+      "Latitude": 46.021256,
+      "Longitude": 7.74912
+   },
+   {
+      "Country": "ch",
+      "City": "zofingen",
+      "AccentCity": "Zofingen",
+      "Region": 1,
+      "Population": 12327,
+      "Latitude": 47.289945,
+      "Longitude": 7.947274
+   },
+   {
+      "Country": "ch",
+      "City": "zollikofen",
+      "AccentCity": "Zollikofen",
+      "Region": 5,
+      "Population": 9144,
+      "Latitude": 46.99567800000001,
+      "Longitude": 7.4590130000000014
+   },
+   {
+      "Country": "ch",
+      "City": "zollikon",
+      "AccentCity": "Zollikon",
+      "Region": 25,
+      "Population": 12534,
+      "Latitude": 47.338967,
+      "Longitude": 8.577801
+   },
+   {
+      "Country": "ch",
+      "City": "zuchwil",
+      "AccentCity": "Zuchwil",
+      "Region": 18,
+      "Population": 8815,
+      "Latitude": 47.20777800000001,
+      "Longitude": 7.561126
+   },
+   {
+      "Country": "ch",
+      "City": "zug",
+      "AccentCity": "Zug",
+      "Region": 24,
+      "Population": 24197,
+      "Latitude": 47.172421,
+      "Longitude": 8.517445
+   },
+   {
+      "Country": "ch",
+      "City": "zumikon",
+      "AccentCity": "Zumikon",
+      "Region": 25,
+      "Population": 5082,
+      "Latitude": 47.327409,
+      "Longitude": 8.620752
+   },
+   {
+      "Country": "ch",
+      "City": "zurich",
+      "AccentCity": "Zurich",
+      "Region": 25,
+      "Population": 346185,
+      "Latitude": 47.366667,
+      "Longitude": 8.55
+   }
+]
