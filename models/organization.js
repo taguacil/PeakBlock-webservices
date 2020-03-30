@@ -4,6 +4,7 @@ const { codeableConceptSchema } = require('./codeableConcept');
 const { contactPointSchema } = require('./contactPoint');
 const { addressSchema } = require('./address');
 const { humanNameSchema } = require('./humanName');
+const { validator } = require('../misc/reqDataValidator');
 
 const organizationSchema = new mongoose.Schema(
     {
@@ -19,7 +20,7 @@ const organizationSchema = new mongoose.Schema(
             minlength: 8,
             maxlength: 1024,
             required: true,
-        },    
+        },
         active: {
             type: Boolean,
         },
@@ -50,6 +51,39 @@ organizationSchema.methods.validPassword = async function verifyPassword(passwor
 
 const Organization = mongoose.model('Organization', organizationSchema);
 
+const organizationSchemaAjv = {
+    $id: 'organizationSchema',
+    title: 'organization',
+    description: 'organization data',
+    type: 'object',
+    required: [
+        'name',
+        'email',
+        'password',
+    ],
+    properties: {
+        name: {
+            type: 'string',
+        },
+        email: {
+            type: 'string',
+            format: 'email',
+            minLength: 5,
+            maxLength: 255,
+        },
+        password: {
+            type: 'string',
+            minLength: 8,
+            maxLength: 1024,
+        },
+    },
+};
+
+function validateRegistration(organization) {
+    return validator(organization, organizationSchemaAjv, []);
+}
+
 module.exports = {
     Organization,
+    validateRegistration,
 };
