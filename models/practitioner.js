@@ -5,6 +5,7 @@ const { contactPointSchema } = require('./contactPoint');
 const { addressSchema } = require('./address');
 const { humanNameSchema } = require('./humanName');
 const { identifierSchema } = require('./identifier');
+const { validator } = require('../misc/reqDataValidator');
 
 const practitionerSchema = new mongoose.Schema(
     {
@@ -56,6 +57,39 @@ practitionerSchema.methods.validPassword = async function verifyPassword(passwor
 
 const Practitioner = mongoose.model('Practitioner', practitionerSchema);
 
+const practitionerSchemaAjv = {
+    $id: 'practitionerSchema',
+    title: 'practitioner',
+    description: 'practitioner data',
+    type: 'object',
+    required: [
+        'name',
+        'email',
+        'password',
+    ],
+    properties: {
+        name: {
+            type: 'string',
+        },
+        email: {
+            type: 'string',
+            format: 'email',
+            minLength: 5,
+            maxLength: 255,
+        },
+        password: {
+            type: 'string',
+            minLength: 8,
+            maxLength: 1024,
+        },
+    },
+};
+
+function validateRegistration(practitioner) {
+    return validator(practitioner, practitionerSchemaAjv, []);
+}
+
 module.exports = {
     Practitioner,
+    validateRegistration,
 };
