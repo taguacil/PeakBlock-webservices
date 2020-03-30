@@ -4,10 +4,10 @@ const config = require('config');
 const bcrypt = require('bcrypt');
 const _ = require('lodash');
 const emailvalidator = require('email-validator');
-const { Organization } = require('../models/organization');
-const { Practitioner } = require('../models/practitioner');
+const { Practitioner, validateRegistration } = require('../models/practitioner');
 const { PractitionerRole } = require('../models/practitionerRole');
-const { Patient, validate } = require('../models/patient');
+const { Patient, validate, validateSymptoms } = require('../models/patient');
+const { Organization } = require('../models/organization');
 const { HealthcareService } = require('../models/healthcareService');
 
 exports.login = async function authenticate(req, res, next) {
@@ -30,9 +30,8 @@ exports.login = async function authenticate(req, res, next) {
 
 // Practitioner Registration.
 exports.register = async (req, res) => {
-    // TODO:
-    // const error = validate(req.body);
-    // if (error) return res.status(400).send(error);
+    const error = validateRegistration(req.body);
+    if (error) return res.status(400).send(error);
 
     const valid = emailvalidator.validate(req.body.email);
     if (!valid) return res.status(400).send('Invalid Email!');
@@ -101,6 +100,11 @@ exports.viewRoles = async (req, res) => {
 
 exports.assignPatient = async (req, res) => {
     if (!(req.user && req.user.role === 'practitioner')) return res.status(403).send({ message: 'You are not authorized!' });
+    const organization = await Organization.findById(req.params.organization);
+    if (!organization) return res.status(400).send({ message: 'Organization does not exist!' });
+    const healthcareService = await HealthcareService.findById(req.params.healthcareService);
+    if (!healthcareService) return res.status(400).send({ message: 'Organization does not exist!' });
+
     const practitionerRole = await PractitionerRole.findOne({
         practitioner: req.user.id,
         organization: req.params.organization,
@@ -115,11 +119,23 @@ exports.assignPatient = async (req, res) => {
     patient.generalPractitioner.push(practitionerRole.id);
     await patient.save();
 
-    res.send({ message: 'Patient assigned successfully!' });
+    return res.send({ message: 'Patient assigned successfully!' });
 };
 
-exports.viewPatients = async (req, res) => {
+exports.fillPatientSymptoms = async (req, res) => {
     if (!(req.user && req.user.role === 'practitioner')) return res.status(403).send({ message: 'You are not authorized!' });
 
-    const patients = Patient.find({ 'generalPractitioner.practitionerRole': req.user.id });
+    let patient = await Patient.findById(req.params.patient);
+    if (!patient) return res.status(404).send({ message: 'Must register first!' });
+
+    const exist = patient.generalPractitioner.includes(req.user.id);
+    if (!exist) return res.status(400).send({ message: 'Please assign the patient to the practitioner first!' });
+
+    const error = validateSymptoms(req.body);
+    if (error) return res.status(400).send(error);
+
+    if (req.body.covid_probability !== 0 || req.body.covid_probability !== 1) return res.status(400).send({ message: 'Please enter a valid covid result!' });
+
+    patient = await Patient.findByIdAndUpdate({ _id: req.params.patient }, req.body);
+    return res.send(patient);
 };
