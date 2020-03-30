@@ -25,7 +25,10 @@ const patientSchema = new mongoose.Schema({
         required: true,
         default: true,
     },
-    name: humanNameSchema,
+    name: {
+        type: String,
+        required: true,
+    },
     telecom: [contactPointSchema],
     gender: {
         type: String,
@@ -165,16 +168,7 @@ const patientSchemaAjv = {
     ],
     properties: {
         name: {
-            type: 'object',
-            properties: {
-                text: {
-                    type: 'string',
-                },
-            },
-            required: [
-                'text',
-            ],
-            additionalProperties: false,
+            type: 'string',
         },
         email: {
             type: 'string',
@@ -293,7 +287,9 @@ const patientDetailsSchemaAjv = {
         active: {
             type: 'boolean',
         },
-        name: humanNameAJVSchema,
+        name: {
+            type: 'string',
+        },
         telecom: {
             type: 'array',
             items: contactPointAJVSchema,
