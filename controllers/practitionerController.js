@@ -102,21 +102,24 @@ exports.assignPatient = async (req, res) => {
     if (!(req.user && req.user.role === 'practitioner')) return res.status(403).send({ message: 'You are not authorized!' });
     const organization = await Organization.findById(req.params.organization);
     if (!organization) return res.status(400).send({ message: 'Organization does not exist!' });
-    const healthcareService = await HealthcareService.findById(req.params.healthcareService);
-    if (!healthcareService) return res.status(400).send({ message: 'Organization does not exist!' });
+    // const healthcareService = await HealthcareService.findById(req.params.healthcareService);
+    // if (!healthcareService) return res.status(400).send({ message: 'Organization does not exist!' });
 
     const practitionerRole = await PractitionerRole.findOne({
         practitioner: req.user.id,
         organization: req.params.organization,
-        healthcareService: req.params.healthcareService,
+        // healthcareService: req.params.healthcareService,
     });
 
-    if (!practitionerRole) return res.status(400).send({ message: 'You are not assigned to this service with this organization' });
-    const { patientMail } = req.body;
-    const patient = Patient.findOne({ email: patientMail });
+    if (!practitionerRole) return res.status(400).send({ message: 'You are not assigned to this organization' });
+    const { email } = req.body;
+    const patient = await Patient.findOne({ email });
+    if (!patient) return res.status(404).send({ message: 'Patient does not exist!' });
     const exists = patient.generalPractitioner.includes(practitionerRole.id);
-    if (exists) return res.status(400).send({ message: 'Already assigned!' });
+    const exists2 = patient.generalPractitioner.includes(req.user.id);
+    if (exists || exists2) return res.status(400).send({ message: 'Already assigned!' });
     patient.generalPractitioner.push(practitionerRole.id);
+    patient.generalPractitioner.push(req.user.id);
     await patient.save();
 
     return res.send({ message: 'Patient assigned successfully!' });
@@ -126,7 +129,7 @@ exports.fillPatientSymptoms = async (req, res) => {
     if (!(req.user && req.user.role === 'practitioner')) return res.status(403).send({ message: 'You are not authorized!' });
 
     let patient = await Patient.findById(req.params.patient);
-    if (!patient) return res.status(404).send({ message: 'Must register first!' });
+    if (!patient) return res.status(404).send({ message: 'Patient does not exist!' });
 
     const exist = patient.generalPractitioner.includes(req.user.id);
     if (!exist) return res.status(400).send({ message: 'Please assign the patient to the practitioner first!' });
@@ -134,8 +137,47 @@ exports.fillPatientSymptoms = async (req, res) => {
     const error = validateSymptoms(req.body);
     if (error) return res.status(400).send(error);
 
-    if (req.body.covid_probability !== 0 || req.body.covid_probability !== 1) return res.status(400).send({ message: 'Please enter a valid covid result!' });
+    if (!(req.body.covid_probability === 0 || req.body.covid_probability === 1)) return res.status(400).send({ message: 'Please enter a valid covid result!' });
 
-    patient = await Patient.findByIdAndUpdate({ _id: req.params.patient }, req.body);
+    patient = await Patient.findByIdAndUpdate({ _id: req.params.patient }, req.body, { new: true });
+    return res.send(patient);
+};
+
+exports.viewPatient = async (req, res) => {
+    if (!(req.user && req.user.role === 'practitioner')) return res.status(403).send({ message: 'You are not authorized!' });
+    const patient = await Patient.findOne({ email: req.body.email });
+    if (!patient) return res.status(404).send({ message: 'Patient does not exist!' });
+
+    const exist = patient.generalPractitioner.includes(req.user.id);
+    if (!exist) return res.status(400).send({ message: 'Please assign the patient to the practitioner first!' });
+
+    res.send(patient);
+};
+
+exports.toggleRecovered = async (req, res) => {
+    if (!(req.user && req.user.role === 'practitioner')) return res.status(403).send({ message: 'You are not authorized!' });
+
+    const patient = await Patient.findById(req.params.patient);
+    if (!patient) return res.status(404).send({ message: 'Patient does not exist!' });
+
+    const exist = patient.generalPractitioner.includes(req.user.id);
+    if (!exist) return res.status(400).send({ message: 'Please assign the patient to the practitioner first!' });
+
+    patient.recovered = !patient.recovered;
+    await patient.save();
+    return res.send(patient);
+};
+
+exports.markAsDead = async (req, res) => {
+    if (!(req.user && req.user.role === 'practitioner')) return res.status(403).send({ message: 'You are not authorized!' });
+
+    const patient = await Patient.findById(req.params.patient);
+    if (!patient) return res.status(404).send({ message: 'Patient does not exist!' });
+
+    const exist = patient.generalPractitioner.includes(req.user.id);
+    if (!exist) return res.status(400).send({ message: 'Please assign the patient to the practitioner first!' });
+
+    patient.deceased = Date.now();
+    await patient.save();
     return res.send(patient);
 };

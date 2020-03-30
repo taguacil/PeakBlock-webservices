@@ -82,10 +82,10 @@ exports.addPractitoner = async (req, res) => {
 exports.addPractitonerRole = async (req, res) => {
     if (!(req.user && req.user.role === 'organization')) return res.status(403).send({ message: 'You are not authorized' });
     // TODO: data validation
-    const practitioner = await Practitioner.findById(req.body.practitioner);
+    const practitioner = await Practitioner.findById(req.params.practitioner);
     if (!practitioner) return res.status(404).send({ message: 'Such practitioner does not exist. Please add pracititioner, then add the role!' });
-    const healthcareService = await HealthcareService.findById(req.body.healthcareService);
-    if (!healthcareService) return res.status(404).send({ message: 'Such healthcare service does not exist. Please add pracititioner, then add the role!' });
+    // const healthcareService = await HealthcareService.findById(req.body.healthcareService);
+    // if (!healthcareService) return res.status(404).send({ message: 'Such healthcare service does not exist. Please add pracititioner, then add the role!' });
 
     req.body.organization = req.user.id;
     req.body.practitioner = req.params.practitioner;
