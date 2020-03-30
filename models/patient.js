@@ -73,10 +73,10 @@ const patientSchema = new mongoose.Schema({
     }],
     generalPractitioner: [{ type: mongoose.Schema.Types.ObjectId, ref: 'PractitionerRole' }],
     // generalPractitioner: [{
-        // organization: { type: mongoose.Schema.Types.ObjectId, ref: 'Organization' },
-        // practitioner: { type: mongoose.Schema.Types.ObjectId, ref: 'Practitioner' },
-        // practitionerRole: { type: mongoose.Schema.Types.ObjectId, ref: 'PractitionerRole' },
-        // [{ Reference(Organization|Practitioner|PractitionerRole) }], // Patient's nominated primary care provider
+    // organization: { type: mongoose.Schema.Types.ObjectId, ref: 'Organization' },
+    // practitioner: { type: mongoose.Schema.Types.ObjectId, ref: 'Practitioner' },
+    // practitionerRole: { type: mongoose.Schema.Types.ObjectId, ref: 'PractitionerRole' },
+    // [{ Reference(Organization|Practitioner|PractitionerRole) }], // Patient's nominated primary care provider
     // }],
     managingOrganization: { type: mongoose.Schema.Types.ObjectId, ref: 'Organization' },
     link: [{ // Link to another patient resource that concerns the same actual person
@@ -141,7 +141,7 @@ const patientSchema = new mongoose.Schema({
     },
     recovered: {
         type: Boolean,
-    }
+    },
 }, { timestamps: true });
 
 patientSchema.methods.validPassword = async function verifyPassword(password) {
@@ -193,7 +193,7 @@ const patientSchemaAjv = {
                 'male',
                 'female',
                 'other',
-                'unknown'
+                'unknown',
             ],
         },
         birthDate: {
@@ -324,7 +324,7 @@ const patientDetailsSchemaAjv = {
         photo: {
             type: 'array',
             items: {
-                type: 'string'
+                type: 'string',
             },
         },
         // TODO: continue the rest of the data
