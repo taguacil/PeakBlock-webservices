@@ -23,4 +23,18 @@ router.get('/test', (req, res) => {
         });
 });
 
+router.get('/kube', (req, res) => {
+    const pythonHost = config.get('pythonIP');
+    axios.get(`http://peakblockai:5555/api/ai/home`)
+        .then((response) => {
+            console.log(response.data);
+            res.send(response.data);
+            // res.write(response.data, encoding='utf8')
+        })
+        .catch((error) => {
+            console.log('ERROOOORRRR');
+            console.log(error);
+        });
+});
+
 module.exports = router;
